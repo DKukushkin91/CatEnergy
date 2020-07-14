@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Кукушкин](https://up.htmlacademy.ru/adaptive/20/user/599015).
-* Наставник: [Александр Карташев](https://htmlacademy.ru/profile/id77080).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
