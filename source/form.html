@@ -4,31 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<e8c381f1-4417-41b3-95c7-24140e2a89ba>&lang=ru_RU" type="text/javascript">
-  </script>
-  <script src="./js/maps.js" type="text/javascript"></script>
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="#" class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" alt="Логотип">
-    </a>
-    <a class="page-header__logo page-logo--text">
       <img src="https://via.placeholder.com/150x150" alt="cat energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__menu menu-header">
         <ul class="menu-header__list">
           <li class="menu-header__item">
-            <a href="#">главная</a>
+            <a href="index.html">главная</a>
           </li>
           <li class="menu-header__item">
-            <a href="#">каталог продукции</a>
+            <a href="catalog.html">каталог продукции</a>
           </li>
           <li class="menu-header__item">
             <a href="#">подбор программы</a>
@@ -41,32 +36,31 @@
   <main class="main-form">
     <h1 class="main-form__title">Подбор программы</h1>
     <form class="main-form__form">
-      <fieldset class="main-form__questionnaire">
+      <fieldset class="main-form__fieldset">
         <legend class="main-form__legend">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
-        <label class="main-form__label main-form__name">имя:*
-          <input class="main-form__input input__name" type="text" placeholder="барсик">
+        <label class="main-form__label">имя:*
+          <input class="main-form__input" type="text" placeholder="барсик">
         </label>
-        <label class="main-form__label main-form__name">вес (кг):*
-          <input class="main-form__input input__weight" type="number" placeholder="7">
+        <label class="main-form__label">вес (кг):*
+          <input class="main-form__input" type="number" placeholder="7">
         </label>
-        <label class="main-form__label main-form__name">возраст (лет):
-          <input class="main-form__input input__age" type="number" placeholder="7">
+        <label class="main-form__label">возраст (лет):
+          <input class="main-form__input" type="number" placeholder="7">
         </label>
       </fieldset>
-      <fieldset class="main-form__radio">
-        <legend class="visually-hidden"></legend>
-        <label class="main-form__radio--text">похудение
+      <fieldset class="main-form__fieldset">
+        <label class="main-form__text">похудение
           <input class="main-form__radiobtn" type="radio" checked>
         </label>
-        <label class="main-form__radio--text">набор массы
+        <label class="main-form__text">набор массы
           <input class="main-form__radiobtn" type="radio">
         </label>
-        <label class="main-form__radio--text">не знаю (нужен ваш совет)
+        <label class="main-form__text">не знаю (нужен ваш совет)
           <input class="main-form__radiobtn" type="radio">
         </label>
       </fieldset>
-      <fieldset class="main-form__contacts">
-        <legend class="main-form__legend--title">Контактные данные (владельца кота)</legend>
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__caption">Контактные данные (владельца кота)</legend>
         <label class="main-form__label main-form__label--email">e-mail:*
           <input class="main-form__input input__email" type="email" placeholder="kuklachev@gmail.com">
         </label>
@@ -74,23 +68,23 @@
           <input class="main-form__input input__tel" type="tel" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
-      <fieldset class="main-form__comments">
-        <legend class="main-form__legend--title">Комментарий</legend>
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__caption">Комментарий</legend>
         <textarea class="main-form__textarea" placeholder="расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="main-form__options">
-        <legend class="main-form__legend--title">Дополнительно</legend>
-        <label class="main-form__label--options">сахарозаменитель
-          <input class="main-form__input--checkbox visually-hidden" type="checkbox" checked>
+      <fieldset class="main-form__fieldset">
+        <legend class="main-form__caption">Дополнительно</legend>
+        <label class="main-form__options">сахарозаменитель
+          <input class="main-form__input visually-hidden" type="checkbox" checked>
         </label>
-        <label class="main-form__label--options">питьевая вода
-          <input class="main-form__input--checkbox visually-hidden" type="checkbox">
+        <label class="main-form__options">питьевая вода
+          <input class="main-form__input visually-hidden" type="checkbox">
         </label>
-        <label class="main-form__label--options">молоко
-          <input class="main-form__input--checkbox visually-hidden" type="checkbox">
+        <label class="main-form__options">молоко
+          <input class="main-form__input visually-hidden" type="checkbox">
         </label>
-        <label class="main-form__label--options">витамины
-          <input class="main-form__input--checkbox visually-hidden" type="checkbox">
+        <label class="main-form__options">витамины
+          <input class="main-form__input visually-hidden" type="checkbox">
         </label>
       </fieldset>
       <input class="main-form--button button" type="submit" value="отправить заявку">
@@ -107,15 +101,25 @@
     <a class="page-footer__logo page-logo--text">
       <img src="https://via.placeholder.com/150x150" alt="cat energy">
     </a>
-    <div class="page-footer__wrapper social">
-      <a class="social__link--vk"></a>
-      <a class="social__link--inst"></a>
-      <a class="social__link--fb"></a>
-    </div>
+    <ul class="page-footer__list social">
+      <li class="social__item">
+        <a class="social__link--vk"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--inst"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--fb"></a>
+      </li>
+    </ul>
     <div class="page-footer__wrapper copyright">
       <a class="copyright__link">HTML Academy</a>
       <a class="copyright__logo"></a>
     </div>
   </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<e8c381f1-4417-41b3-95c7-24140e2a89ba>&lang=ru_RU"
+    type="text/javascript">
+  </script>
+  <script src="./js/maps.js" type="text/javascript"></script>
 </body>

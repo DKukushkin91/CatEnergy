@@ -4,23 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<e8c381f1-4417-41b3-95c7-24140e2a89ba>&lang=ru_RU" type="text/javascript">
-  </script>
-  <script src="./js/maps.js" type="text/javascript"></script>
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="#" class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" alt="Логотип">
-    </a>
-    <a class="page-header__logo page-logo--text">
       <img src="https://via.placeholder.com/150x150" alt="cat energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__menu menu-header">
         <ul class="menu-header__list">
@@ -28,10 +23,10 @@
             <a href="#">главная</a>
           </li>
           <li class="menu-header__item">
-            <a href="#">каталог продукции</a>
+            <a href="catalog.html">каталог продукции</a>
           </li>
           <li class="menu-header__item">
-            <a href="#">подбор программы</a>
+            <a href="form.html">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -47,28 +42,25 @@
     </section>
     <section class="catalog-preview">
       <h2 class="visually-hidden">Индивидуальные программы</h2>
-      <div class="catalog-preview__wrapper">
-        <h3 class="catalog-preview__title catalog-preview__logo--cat">похудение</h3>
-        <p class="catalog-preview__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <span class="catalog-preview__link--block">
+      <ul class="catalog-preview__list">
+        <li class="catalog-preview__item">
+          <h3 class="catalog-preview__title">похудение</h3>
+          <p class="catalog-preview__text">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="catalog-preview__link">каталог slim</a>
-          <button class="catalog-preview__button" type="button">
-            <span class="visually-hidden">перейти в каталог</span>
           </button>
-        </span>
-      </div>
-      <div class="catalog-preview__wrapper">
-        <h3 class="catalog-preview__title catalog-preview__logo--panter">набор массы</h3>
-        <p class="catalog-preview__content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
-        <span class="catalog-preview__link--block">
+          </span>
+        </li>
+        <li class="catalog-preview__item">
+          <h3 class="catalog-preview__title">набор массы</h3>
+          <p class="catalog-preview__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="catalog-preview__link">каталог pro</a>
-          <button class="catalog-preview__button" type="button">
-            <span class="visually-hidden">перейти в каталог</span>
           </button>
-        </span>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="main-features">
       <h2 class="main-features__title">Как это работает</h2>
@@ -89,18 +81,18 @@
     </section>
     <section class="main-result">
       <h2 class="main-result__title">Живой пример</h2>
-      <p class="main-result__content">
+      <p class="main-result__text">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <fieldset class="main-result__fieldset">
-        <legend class="main-result__text">снижение веса</legend>
-        <p class="main-result__content">5 кг</p>
-      </fieldset>
-      <fieldset class="main-result__fieldset">
-        <legend class="main-result__text">затрачено времени</legend>
-        <p class="main-result__content">60 дней</p>
-      </fieldset>
+      <div class="main-result__wrap">
+        <p class="main-result__description">снижение веса</p>
+        <p class="main-result__description--bold">5 кг</p>
+      </div>
+      <div class="main-result__wrap">
+        <p class="main-result__description">затрачено времени</p>
+        <p class="main-result__description--bold">60 дней</p>
+      </div>
       <p class="main-result__cost">затраты на питание: 15 000 РУБ.</p>
       <div class="main-result__wrapper slider-cat">
         <button type="button" class="slider-cat__toggle">было</button>
@@ -118,17 +110,27 @@
     <a class="page-footer__logo page-logo--text">
       <img src="https://via.placeholder.com/150x150" alt="cat energy">
     </a>
-    <div class="page-footer__wrapper social">
-      <a class="social__link--vk"></a>
-      <a class="social__link--inst"></a>
-      <a class="social__link--fb"></a>
-    </div>
+    <ul class="page-footer__list social">
+      <li class="social__item">
+        <a class="social__link--vk"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--inst"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--fb"></a>
+      </li>
+    </ul>
     <div class="page-footer__wrapper copyright">
       <a class="copyright__link">HTML Academy</a>
       <a class="copyright__logo"></a>
     </div>
   </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<e8c381f1-4417-41b3-95c7-24140e2a89ba>&lang=ru_RU"
+    type="text/javascript">
+  </script>
+  <script src="./js/maps.js" type="text/javascript"></script>
 </body>
 
 </html>
