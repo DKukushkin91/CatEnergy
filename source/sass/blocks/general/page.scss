@@ -1,0 +1,31 @@
+$basic-black: #000000;
+$basic-white: #ffffff;
+$basic-green: #68B738;
+$border-color: #e6e6e6;
+$text-color: #444444;
+$background-grey: #F2F2F2;
+$contacts-text: #111111;
+$background-results: #EAEAEA;
+$catalog-item__title: #222222;
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page {
+  height: 100%;
+  width: 320px;
+}
+
+.page__body {
+  font-family:"Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  color: $basic-black;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -17,19 +19,17 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
-      <div class="main-nav__menu menu-header">
-        <ul class="menu-header__list">
-          <li class="menu-header__item">
-            <a href="index.html">главная</a>
-          </li>
-          <li class="menu-header__item">
-            <a href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="menu-header__item">
-            <a href="#">подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html" class="main-nav__link">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html" class="main-nav__link">подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -62,10 +62,10 @@
       <fieldset class="main-form__fieldset">
         <legend class="main-form__caption">Контактные данные (владельца кота)</legend>
         <label class="main-form__label main-form__label--email">e-mail:*
-          <input class="main-form__input input__email" type="email" placeholder="kuklachev@gmail.com">
+          <input class="main-form__input" type="email" placeholder="kuklachev@gmail.com">
         </label>
         <label class="main-form__label main-form__label--tel">телефон:*
-          <input class="main-form__input input__tel" type="tel" placeholder="8 (960) 900-60-90">
+          <input class="main-form__input" type="tel" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
       <fieldset class="main-form__fieldset">
@@ -87,7 +87,7 @@
           <input class="main-form__input visually-hidden" type="checkbox">
         </label>
       </fieldset>
-      <button class="main-form--button button" type="submit">Отправить заявку</button>
+      <button class="main-form__button button" type="submit">Отправить заявку</button>
       <p class="main-form__footnote">* — Обязательные поля</p>
     </form>
     <div class="main-contacts main-contacts--grey">
