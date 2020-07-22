@@ -1,12 +1,12 @@
-$basic-black: #000000;
-$basic-white: #ffffff;
-$basic-green: #68B738;
-$border-color: #e6e6e6;
-$text-color: #444444;
-$background-grey: #F2F2F2;
-$contacts-text: #111111;
-$background-results: #EAEAEA;
-$catalog-item__title: #222222;
+$basic-black:#000000;
+$basic-white:#ffffff;
+$basic-green:#68B738;
+$border-color:#e6e6e6;
+$text-color:#444444;
+$background-grey:#F2F2F2;
+$contacts-text:#111111;
+$background-results:#EAEAEA;
+$catalog-item__title:#222222;
 
 .visually-hidden {
   position: absolute;
@@ -18,14 +18,22 @@ $catalog-item__title: #222222;
 
 .page {
   height: 100%;
-  width: 320px;
 }
 
 .page__body {
   font-family:"Oswald", "Arial", sans-serif;
   font-size: 14px;
   color: $basic-black;
+  font-weight: 400;
   line-height: 18px;
   margin: 0;
   padding: 0;
+  width: 320px;
+}
+
+.button {
+  color: $basic-white;
+  background-color: $basic-green;
+  text-align: center;
+  text-decoration: none;
 }
