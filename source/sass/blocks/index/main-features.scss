@@ -36,55 +36,55 @@
   padding-left: 80px;
   padding-top: 5px;
 
-    &--eco::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-image: url("../img/advantage-leaf@1x.png");
-      background-color: $basic-green;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-    }
+  &--eco::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
 
-    &--easy::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-image: url("../img/advantage-powder@1x.png");
-      background-color: $basic-green;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-    }
+  &--easy::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
 
-    &--eat::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-image: url("../img/advantage-dining@1x.png");
-      background-color: $basic-green;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-    }
+  &--eat::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
 
-    &--clock::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-image: url("../img/advantage-clock@1x.png");
-      background-color: $basic-green;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-    }
+  &--clock::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
 }

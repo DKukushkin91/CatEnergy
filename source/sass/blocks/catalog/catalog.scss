@@ -89,10 +89,11 @@
   color: $text-color;
   font-size: 12px;
   line-height: 16px;
-    & .catalog-item__title {
-      text-align: center;
-      color: $contacts-text;
-    }
+
+  & .catalog-item__title {
+    text-align: center;
+    color: $contacts-text;
+  }
 }
 
 .button--grey {

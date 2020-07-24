@@ -32,8 +32,6 @@
 
 .social__item {
   list-style: none;
-
-
 }
 
 .social__link {
@@ -41,29 +39,29 @@
   vertical-align: middle;
   text-decoration: none;
 
-
-
-    &--vk {
-      background-image: url("../img/icon-vk.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 22px;
-      height: 12px;
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 12px;
   }
-    &--inst {
-      background-image: url("../img/icon-insta.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 16px;
-      height: 16px;
+
+  &--inst {
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
   }
-    &--fb {
-      background-image: url("../img/icon-fb.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 10px;
-      height: 18px;
-    }
+
+  &--fb {
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 18px;
+  }
 }
 
 .copyright {

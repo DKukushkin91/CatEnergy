@@ -15,14 +15,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icon-gift.svg");
-      width: 56px;
-      height: 60px;
-      left: 110px;
-      top: 60px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    width: 56px;
+    height: 60px;
+    left: 110px;
+    top: 60px;
   }
 }
 
