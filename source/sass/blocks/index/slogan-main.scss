@@ -24,7 +24,7 @@
     background-position: center;
     width: 280px;
     height: 270px;
-    margin-bottom: 40px;
+    margin: 0;
   }
 }
 
@@ -41,15 +41,12 @@
 }
 
 .slogan-main__link {
-  position: absolute;
   text-align: center;
-  justify-content: center;
-  bottom: 0;
   font-size: 14px;
   line-height: 18px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 72px;
+  padding-left: 75px;
   padding-right: 70px;
-  margin-top: 40px;
+  width: 400px;
 }

@@ -1,3 +1,5 @@
+@import "globalstyle.scss";
+@import "general/button.scss";
 @import "general/page.scss";
 @import "general/page-header.scss";
 @import "general/main-nav.scss";
@@ -6,6 +8,7 @@
 @import "index/catalog-preview.scss";
 @import "index/main-features.scss";
 @import "index/main-result.scss";
+@import "index/slider-cat.scss";
 @import "general/main-contacts.scss";
 @import "general/page-footer.scss";
 @import "catalog/catalog.scss";
