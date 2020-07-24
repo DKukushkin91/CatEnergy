@@ -1,12 +1,9 @@
 .slogan-main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
-  background-image: url("img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-top: 27px;
@@ -18,8 +15,9 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    background-image: url("img/index-can-mobile@1x.png");
+    bottom: 50px;
+    left: 20px;
+    background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 280px;
@@ -41,12 +39,14 @@
 }
 
 .slogan-main__link {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 75px;
-  padding-right: 70px;
-  width: 400px;
+  padding-right: 71px;
 }

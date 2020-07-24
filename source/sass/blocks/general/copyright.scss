@@ -1,0 +1,24 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 18px;
+  border-top: 1px solid $footer-border;
+}
+
+.copyright__link {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  color: $text-color;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  background-image: url("..img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+}

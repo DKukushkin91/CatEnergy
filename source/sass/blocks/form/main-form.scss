@@ -35,6 +35,10 @@
   border-bottom: 1px solid $footer-border;
 }
 
+.main-form__fieldset--green {
+  border: none;
+}
+
 .main-form__legend {
   margin: 0;
   padding: 0;
@@ -123,10 +127,6 @@
   }
 }
 
-.main-form__fieldset--green {
-  border: none;
-}
-
 .main-form__caption {
   font-size: 24px;
   line-height: 26px;
@@ -194,7 +194,7 @@
     left: -18px;
     width: 18px;
     height: 14px;
-    background-image: url("img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
