@@ -1,4 +1,225 @@
 .main-form {
   padding: 0;
   margin: 0;
+  font-weight: 400;
+}
+
+.main-form__title {
+  padding: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 37px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: left;
+  border-top: 1px solid $footer-border;
+}
+
+.main-form__form {
+  padding: 0;
+  margin: 0;
+}
+
+.main-form__fieldset {
+  border: none;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $footer-border;
+}
+
+.main-form__legend {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 39px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main-form__input {
+  text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
+  border: 1px solid $input-border;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  margin-left: 10px;
+  width: 122px;
+  flex-grow: 1;
+}
+
+.main-form__text {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: left;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $catalog-item__title;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.main-form__radiobtn {
+  position: relative;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $border-grey;
+    border-radius: 50%;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -26px;
+    width: 10px;
+    height: 10px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+}
+
+.main-form__fieldset--green {
+  border: none;
+}
+
+.main-form__caption {
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main-form__label--email {
+  position: relative;
+}
+
+.main-form__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: 0;
+  border: 1px solid $input-border;
+  min-width: 248px;
+  min-height: 132px;
+}
+
+.main-form__options {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $basic-black;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.main-form__checkbox {
+  position: relative;
+  margin: 0;
+  margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    border: 1px solid $border-grey;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.main-form__button {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.main-form__footnote {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
