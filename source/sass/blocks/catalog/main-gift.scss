@@ -11,14 +11,14 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("img/gift-photo-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("img/icon-gift.svg");
     width: 56px;
     height: 60px;
     left: 110px;
