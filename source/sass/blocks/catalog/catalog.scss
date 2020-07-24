@@ -1,0 +1,116 @@
+.catalog {
+  background-color: $basic-white;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  border-top: 1px solid $footer-border;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  border-top: 1px solid $border-catalog;
+}
+
+.catalog-item__link {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.catalog-item__icon {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.catalog-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  color: $catalog-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog__description-list {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+}
+
+.catalog-item__features-name {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.catalog-item__button {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 109px;
+  padding-right: 110px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.catalog-item__wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 16px;
+
+  & .catalog-item__title {
+    text-align: center;
+    color: $contacts-text;
+    margin-bottom: 10px;
+  }
+
+  & .catalog-item__text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.button--grey {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $text-color;
+  background-color: $background-grey;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

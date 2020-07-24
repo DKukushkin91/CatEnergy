@@ -1,0 +1,55 @@
+.slogan-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 27px;
+  padding-bottom: 327px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 280px;
+    height: 270px;
+    margin-bottom: 40px;
+  }
+}
+
+.slogan-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: initial;
+  margin-top: 0;
+}
+
+.slogan-main__text {
+  margin-top: 0;
+}
+
+.slogan-main__link {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 72px;
+  padding-right: 70px;
+  margin-top: 40px;
+}

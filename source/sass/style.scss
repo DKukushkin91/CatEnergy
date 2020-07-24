@@ -1,1 +1,14 @@
-// Начните писать стили здесь
+@import "./blocks/general/page.scss";
+@import "./blocks/general/page-header.scss";
+@import "./blocks/general/main-nav.scss";
+@import "./blocks/index/page-main.scss";
+@import "./blocks/index/slogan-main.scss";
+@import "./blocks/index/catalog-preview.scss";
+@import "./blocks/index/main-features.scss";
+@import "./blocks/index/main-result.scss";
+@import "./blocks/general/main-contacts.scss";
+@import "./blocks/general/page-footer.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/additional-goods.scss";
+@import "./blocks/catalog/main-gift.scss";
+@import "./blocks/form/main-form.scss";
