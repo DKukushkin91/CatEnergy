@@ -1,20 +1,34 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   line-height: 20px;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
 }
 
-.main-nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 20px;
+.main-nav__logo {
+  text-align: center;
+  height: 37px;
   padding-left: 20px;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-right: 10px;
+}
+
+.main-nav__img {
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav__toggle {
@@ -27,15 +41,45 @@
   text-align: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: auto;
+    font-weight: 400;
+    color: $basic-white;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
 }
 
 .main-nav__item {
   border-top: 1px solid $border-color;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 15px;
 }
 
 .main-nav__link {
   color: $basic-black;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }

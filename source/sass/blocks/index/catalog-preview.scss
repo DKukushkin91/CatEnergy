@@ -3,6 +3,10 @@
   padding: 0;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .catalog-preview__list {
@@ -15,12 +19,39 @@
 
 .catalog-preview__item {
   background-color: $background-grey;
-  margin-top: 20px;
+  margin: 0;
+  margin-bottom: 20px;
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0;
+    padding-left: 53px;
+    padding-top: 77px;
+    padding-bottom: 53px;
+    padding-right: 279px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: center;
+      width: 200px;
+      height: 211px;
+      background-color: $basic-green;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 62px;
+    }
+  }
 }
 
 .catalog-preview__title {
@@ -44,6 +75,16 @@
     background-repeat: no-repeat;
     background-color: $basic-green;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -55,6 +96,17 @@
   margin-bottom: 23px;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    min-width: 377px;
+    padding: 0;
+    border: none;
+    margin-bottom: 52px;
+  }
 }
 
 .catalog-preview__link {
@@ -75,5 +127,9 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

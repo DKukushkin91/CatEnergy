@@ -1,12 +1,17 @@
 .main-result {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   background-color: $background-results;
   padding-left: 20px;
   padding-right: 21px;
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
 }
 
 .main-result__title {
@@ -15,6 +20,11 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-result__text {
@@ -26,6 +36,11 @@
   font-weight: 400;
   color: $text-color;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    font-size: 16px;
+  }
 }
 
 .main-result__wrap {
@@ -36,6 +51,11 @@
   text-align: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: stretch;
+    margin: 0;
+  }
 }
 
 .main-result__inner {
@@ -43,6 +63,11 @@
   border-radius: 3px;
   border-bottom-width: 1px;
   width: 122px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin-right: 42px;
+  }
 }
 
 .main-result__value {
@@ -52,6 +77,11 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .main-result__description {
@@ -70,6 +100,15 @@
   font-family: "Arial", sans-serif;
   color: $text-color;
   background-color: $background-results;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    padding: 0;
+    margin-top: 0;
+  }
 }
 
 .main-result__cost {
@@ -83,11 +122,26 @@
   &::after {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     margin-top: 45px;
     background-image: url("../img/after-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 251px;
     height: 240px;
+
+    @media (min-width: $tablet-width) {
+    display: none;
+    }
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-left: 50px;
+    width: 180px;
+    padding: 10px;
+    }
 }
