@@ -1,21 +1,24 @@
 .slogan-main {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-top: 27px;
-  padding-bottom: 25px;
+  min-height: 305px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0;
-  margin-bottom: 137px;
   line-height: 14px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    margin-bottom: 137px;
+  }
 
   &::after {
     content: "";

@@ -8,16 +8,17 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+
     &::before {
-    content: "";
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    background-image: url("../img/before-desktop@1x.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 708px;
-    height: 620px;
+      content: "";
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      background-image: url("../img/before-desktop@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 708px;
+      height: 620px;
     }
   }
 }

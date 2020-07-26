@@ -131,7 +131,7 @@
     height: 240px;
 
     @media (min-width: $tablet-width) {
-    display: none;
+      display: none;
     }
   }
 
@@ -143,5 +143,5 @@
     margin-left: 50px;
     width: 180px;
     padding: 10px;
-    }
+  }
 }
