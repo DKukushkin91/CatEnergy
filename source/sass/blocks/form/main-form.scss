@@ -35,6 +35,10 @@
   border-bottom: 1px solid $footer-border;
 }
 
+.main-form__fieldset--green {
+  border: none;
+}
+
 .main-form__legend {
   margin: 0;
   padding: 0;
@@ -121,10 +125,6 @@
     background-color: $basic-green;
     border-radius: 50%;
   }
-}
-
-.main-form__fieldset--green {
-  border: none;
 }
 
 .main-form__caption {

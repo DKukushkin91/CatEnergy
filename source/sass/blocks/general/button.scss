@@ -1,0 +1,17 @@
+.button {
+  color: $basic-white;
+  background-color: $basic-green;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--grey {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $text-color;
+  background-color: $background-grey;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
