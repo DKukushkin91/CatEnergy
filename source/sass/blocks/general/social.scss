@@ -9,6 +9,11 @@
   padding-left: 60px;
   padding-right: 60px;
   border-top: 1px solid $footer-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .social__item {
@@ -26,6 +31,11 @@
     background-position: center;
     width: 22px;
     height: 12px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
   }
 
   &--inst {
@@ -34,6 +44,11 @@
     background-position: center;
     width: 16px;
     height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--fb {
@@ -42,5 +57,14 @@
     background-position: center;
     width: 10px;
     height: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 13px;
+      height: 27px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
   }
 }

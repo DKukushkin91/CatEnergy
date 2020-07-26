@@ -3,6 +3,23 @@
   justify-content: space-around;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    &::before {
+    content: "";
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("../img/before-desktop@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 708px;
+    height: 620px;
+    }
+  }
 }
 
 .slider-cat__toggle {
@@ -14,4 +31,13 @@
   line-height: 20px;
   background: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px dotted $basic-black;
+    font-size: 20px;
+    padding: 0;
+    margin-right: 10px;
+  }
 }

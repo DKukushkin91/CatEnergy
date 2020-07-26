@@ -10,9 +10,25 @@
   padding-bottom: 22px;
   padding-top: 39px;
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 55px;
+    padding-bottom: 61px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .page-footer__logo {
   text-align: center;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
+
