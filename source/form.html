@@ -47,7 +47,7 @@
             <input class="main-form__input" type="text" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--border">
           <label class="main-form__text">похудение
             <input class="main-form__radiobtn visually-hidden" name="radio" type="radio" checked>
           </label>
@@ -73,6 +73,7 @@
         </fieldset>
         <fieldset class="main-form__fieldset main-form__fieldset--green">
           <legend class="main-form__caption">Дополнительно</legend>
+          <div class="main-form__grid">
           <label class="main-form__options">сахарозаменитель
             <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox" checked>
           </label>
@@ -85,15 +86,18 @@
           <label class="main-form__options">витамины
             <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox">
           </label>
+        </div>
         </fieldset>
+        <div class="main-form__inner">
         <button class="main-form__button button" type="submit">Отправить заявку</button>
         <p class="main-form__footnote">* — Обязательные поля</p>
+      </div>
       </form>
+    </div>
       <div class="main-contacts main-contacts--grey">
         <p class="main-contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <p class="main-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-  </div>
   <div id="map" style="width: auto; height: 362px"></div>
   </main>
 

@@ -37,6 +37,10 @@
 }
 
 .catalog__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -51,6 +55,8 @@
     text-align: center;
     background-color: $background-grey;
     margin: 0;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -104,11 +110,13 @@
   padding: 0;
   list-style: none;
   width: 150px;
+  flex-grow: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
     width: auto;
+    flex-grow: 0;
   }
 }
 

@@ -1,6 +1,6 @@
 .slogan-main {
   display: inline-block;
-  position: relative;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
@@ -8,39 +8,25 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-top: 27px;
-  min-height: 305px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 149px;
   margin: 0;
+  margin-bottom: 135px;
   line-height: 14px;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
+    vertical-align: top;
+    padding-left: 45px;
+    padding-bottom: 10px;
     background-size: cover;
-    margin-bottom: 137px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 270px;
-    margin: 0;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
     background: none;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
   }
 }
 
@@ -78,38 +64,65 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
-.slogan-nav__background {
-  display: none;
+.slogan-main__background {
+display: inline-block;
+margin-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    width: 100%;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 25px;
-    height: 609px;
+    background-position: center 0;
+    box-sizing: border-box;
     padding: 0;
-    padding-top: 60px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding-top: 19px;
+    padding-left: 83px;
+    padding-right: 382px;
+    padding-bottom: 526px;
+    margin-top: 0;
   }
 }
 
 .slogan-main__link {
   display: inline-block;
-  bottom: 50px;
+  vertical-align: middle;
   text-align: center;
+  position: relative;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
   line-height: 18px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 75px;
-  padding-right: 71px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 270px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -16,6 +16,14 @@
   font-weight: 400;
   text-align: left;
   border-top: 1px solid $footer-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-left: 0;
+  }
 }
 
 .main-form__form {
@@ -33,10 +41,37 @@
   margin: 0;
   margin-bottom: 10px;
   border-bottom: 1px solid $footer-border;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+  }
+}
+
+.main-form__fieldset--border {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-grey;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 71px;
+  }
 }
 
 .main-form__fieldset--green {
   border: none;
+}
+
+.main-form__grid {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 123px;
+  }
 }
 
 .main-form__legend {
@@ -50,6 +85,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 40%;
+    margin-bottom: 27px;
+  }
 }
 
 .main-form__label {
@@ -64,6 +107,10 @@
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .main-form__input {
@@ -83,6 +130,10 @@
   margin-left: 10px;
   width: 122px;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .main-form__text {
@@ -99,6 +150,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .main-form__radiobtn {
@@ -134,6 +189,12 @@
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
 }
 
 .main-form__label--email {
@@ -155,6 +216,13 @@
   border: 1px solid $input-border;
   min-width: 248px;
   min-height: 132px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 174px;
+  }
 }
 
 .main-form__options {
@@ -171,6 +239,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .main-form__checkbox {
@@ -205,6 +277,7 @@
 .main-form__button {
   font-size: 16px;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   padding-left: 58px;
   padding-right: 58px;
@@ -215,6 +288,18 @@
   margin-right: 20px;
   margin-bottom: 20px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    flex-grow: 1;
+  }
 }
 
 .main-form__footnote {
@@ -224,4 +309,22 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 140px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+.main-form__inner {
+  @media (min-width: $tablet-width) {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
 }

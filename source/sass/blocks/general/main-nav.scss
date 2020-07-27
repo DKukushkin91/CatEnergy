@@ -18,12 +18,18 @@
 }
 
 .main-nav__logo {
-  text-align: left;
+  text-align: center;
   height: 37px;
   padding-left: 20px;
   padding-bottom: 16px;
   padding-top: 12px;
-  padding-right: 10px;
+  padding-right: 110px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 20px;
+  }
 }
 
 .main-nav__img {
@@ -62,8 +68,17 @@
     font-size: 20px;
     line-height: auto;
     font-weight: 400;
-    color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+  &--white {
     background-image: url("../img/index-background-desktop@1x.jpg");
+    width: 50%;
+    height: 696px;
+    flex-grow: 0;
+    justify-content: space-between;
+    text-align: right;
+    }
   }
 }
 
@@ -73,6 +88,13 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 15px;
+
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+
 }
 
 .main-nav__link {
@@ -80,6 +102,8 @@
   text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    color: $basic-white;
+    .main-nav__list--white & {
+      color: $basic-white;
+    }
   }
 }
