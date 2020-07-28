@@ -15,11 +15,10 @@
   margin-bottom: 135px;
   line-height: 14px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     vertical-align: top;
     padding-left: 45px;
     padding-bottom: 10px;
-    background-size: cover;
     background: none;
     margin: 0;
     margin-bottom: 10px;
@@ -27,6 +26,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: none;
+    color: $basic-black;
   }
 }
 
@@ -37,7 +37,7 @@
   text-transform: initial;
   margin-top: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     color: $basic-black;
     font-size: 60px;
     line-height: 60px;
@@ -54,7 +54,7 @@
 .slogan-main__text {
   margin-top: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     color: $basic-black;
     font-size: 20px;
     line-height: 20px;
@@ -69,13 +69,13 @@
 }
 
 .slogan-main__background {
-display: inline-block;
-margin-top: 20px;
-padding-left: 20px;
-padding-right: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-block;
     width: 100%;
     text-align: left;
@@ -119,12 +119,12 @@ padding-right: 20px;
     height: 270px;
     margin: 0;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 0;
     padding-top: 18px;
     padding-left: 10px;

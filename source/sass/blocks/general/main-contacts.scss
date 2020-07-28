@@ -42,7 +42,7 @@
   color: $contacts-text;
   text-align: left;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;

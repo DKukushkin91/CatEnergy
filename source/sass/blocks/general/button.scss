@@ -15,7 +15,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-block;
     vertical-align: middle;
     text-align: center;

@@ -16,7 +16,7 @@
   font-weight: 400;
   border-top: 1px solid $border-catalog;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -31,7 +31,7 @@
   padding-bottom: 10px;
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     border: 1px solid $border-catalog;
     padding: 0;
     margin-bottom: 69px;
@@ -43,7 +43,7 @@
   margin-bottom: 20px;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -75,7 +75,7 @@
   text-align: left;
   border-top: 1px solid $border-grey;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-flex;
     vertical-align: middle;
     border: none;
@@ -100,7 +100,7 @@
   font-family: "Arial", sans-serif;
   color: $text-color;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -131,7 +131,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: center;
     margin: 0;
     padding: 0;

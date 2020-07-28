@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -33,7 +33,7 @@
   background: none;
   border: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-block;
     vertical-align: middle;
     border-bottom: 1px dotted $basic-black;

@@ -7,7 +7,7 @@
   padding-top: 18px;
   border-top: 1px solid $footer-border;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 0;
     border: none;
   }
@@ -18,7 +18,7 @@
   font-family: "Arial", sans-serif;
   color: $text-color;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 16px;
     line-height: 18px;
   }
@@ -32,7 +32,7 @@
   background-position: center;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 27px;
     height: 34px;
   }

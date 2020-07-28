@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: auto;
     margin: 0 auto;
     padding: 0;
@@ -31,8 +31,6 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 0;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding: 0 110px;
   }
 }
