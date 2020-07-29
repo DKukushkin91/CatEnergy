@@ -30,6 +30,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  &--js {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    }
+  }
 }
 
 .main-contacts__address {
