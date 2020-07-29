@@ -9,6 +9,7 @@
 </head>
 
 <body class="page__body">
+  <div class="page__container">
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo">
@@ -32,7 +33,7 @@
     </header>
 
     <main class="page-main">
-      <div class="page__container">
+      <div class="page-main__container--desk">
       <h1 class="visually-hidden">Cat energy. Всё о питании для котов</h1>
       <section class="slogan-main">
         <h2 class="slogan-main__title">Функциональное питание для котов</h2>
@@ -77,12 +78,14 @@
           </li>
         </ul>
       </section>
+    </div>
       <section class="main-result">
         <h2 class="main-result__title">Живой пример</h2>
         <p class="main-result__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
+        <div class="main-result__container">
         <div class="main-result__wrap">
           <div class="main-result__inner">
             <p class="main-result__value">5 кг</p>
@@ -98,12 +101,12 @@
           <button type="button" class="slider-cat__toggle">было</button>
           <button type="button" class="slider-cat__toggle">стало</button>
         </div>
-      </section>
-      <div class="main-contacts">
-        <p class="main-contacts__title">приглашаем к сотрудничеству дилеров!</p>
-        <p class="main-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-    </div>
+      </section>
+      <div class="main-contacts main-contacts--js">
+        <p class="main-contacts__title main-contacts__title--js">приглашаем к сотрудничеству дилеров!</p>
+        <p class="main-contacts__address main-contacts__address--js">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <div id="map" style="width: auto; height: 362px"></div>
     </main>
 
@@ -140,6 +143,7 @@
       type="text/javascript">
     </script>
     <script src="js/maps.js" type="text/javascript"></script>
+  </div>
 </body>
 
 </html>

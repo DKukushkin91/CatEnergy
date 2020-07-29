@@ -20,17 +20,14 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: auto;
-    margin: 0 auto;
-    padding: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
+  }
+}
+
+.page-main__container--desk {
+  @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
 }

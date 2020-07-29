@@ -92,7 +92,7 @@
     background-color: $basic-green;
     border-radius: 50%;
 
-    @media  (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
     }
 
@@ -101,7 +101,7 @@
     }
   }
 
-  @media  (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: left;
     font-size: 36px;
     line-height: 36px;
@@ -124,7 +124,7 @@
   padding-bottom: 20px;
   border-bottom: 1px solid $border-color;
 
-  @media  (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: left;
     font-size: 16px;
     line-height: 24px;
@@ -165,7 +165,7 @@
     height: 12px;
   }
 
-  @media  (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 20px;
   }
 }

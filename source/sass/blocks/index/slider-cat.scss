@@ -21,6 +21,10 @@
       height: 620px;
     }
   }
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    padding-bottom: 75px;
+  }
 }
 
 .slider-cat__toggle {
@@ -33,7 +37,7 @@
   background: none;
   border: none;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
     border-bottom: 1px dotted $basic-black;

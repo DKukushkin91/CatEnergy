@@ -11,7 +11,8 @@ ymaps.ready(function () {
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           hintContent: 'Cat energy',
-          balloonContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург'
+          balloonContent:
+          `<div class="main-contacts main-contacts--js"><p class="main-contacts__title main-contacts__title--js">приглашаем к сотрудничеству дилеров!</p><p class="main-contacts__address main-contacts__address--js">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p></div>`
       }, {
           iconLayout: 'default#image',
           iconImageHref: 'img/mappoint.png',

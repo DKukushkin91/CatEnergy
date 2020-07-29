@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .main-result__title {
@@ -21,9 +25,14 @@
   font-weight: 400;
   line-height: 40px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+    padding: 0 110px 76px 110px;
   }
 }
 
@@ -37,9 +46,27 @@
   color: $text-color;
   text-align: left;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     line-height: 24px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 33px 110px 0 110px;
+    box-sizing: border-box;
+  }
+}
+
+.main-result__container {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -52,8 +79,15 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     justify-content: stretch;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    padding-left: 110px;
+    padding-right: 110px;
     margin: 0;
   }
 }
@@ -64,9 +98,14 @@
   border-bottom-width: 1px;
   width: 122px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 162px;
     margin-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 162px;
   }
 }
 
@@ -78,7 +117,7 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -101,7 +140,7 @@
   color: $text-color;
   background-color: $background-results;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     background-color: $basic-white;
     font-size: 14px;
     line-height: 14px;
@@ -109,9 +148,16 @@
     padding: 0;
     margin-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color:  $background-results;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .main-result__cost {
+  position: relative;
   margin: 0;
   margin-top: 35px;
   text-align: center;
@@ -130,7 +176,7 @@
     width: 251px;
     height: 240px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -143,5 +189,12 @@
     margin-left: 50px;
     width: 180px;
     padding: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

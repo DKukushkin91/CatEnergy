@@ -8,12 +8,8 @@
   text-transform: uppercase;
   background-color: $basic-white;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
-
-    @media (min-width: $desktop-width) {
-      flex-direction: row;
-    }
   }
 }
 
@@ -74,7 +70,7 @@
     &--white {
       background-image: url("../img/index-background-desktop@1x.jpg");
       width: 50%;
-      height: 696px;
+      min-height: 696px;
       flex-grow: 0;
       justify-content: space-between;
       text-align: right;

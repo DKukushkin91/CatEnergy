@@ -3,6 +3,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 0;
@@ -38,7 +39,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -46,6 +46,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
     column-gap: 153px;
+    padding-right: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,8 +68,9 @@
   text-align: left;
   list-style: none;
   margin-bottom: 20px;
-  padding-left: 80px;
+  padding: 0;
   padding-top: 5px;
+  z-index: 1;
 
   &--eco::before {
     content: "";
@@ -83,12 +85,25 @@
     height: 60px;
     margin-bottom: 10px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 40px;
       margin: 0;
       width: 80px;
       height: 80px;
     }
+  }
+
+  &--eco::after {
+    content: "1";
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: -1;
+    color: $background-grey;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    text-align: center;
   }
 
   &--easy::before {
@@ -104,12 +119,24 @@
     height: 60px;
     margin-bottom: 10px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 40px;
       margin: 0;
       width: 80px;
       height: 80px;
     }
+  }
+
+  &--easy::after {
+    content: "2";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    color: $background-grey;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
   }
 
   &--eat::before {
@@ -125,12 +152,24 @@
     height: 60px;
     margin-bottom: 10px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 40px;
       margin: 0;
       width: 80px;
       height: 80px;
     }
+  }
+
+  &--eat::after {
+    content: "3";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    color: $background-grey;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
   }
 
   &--clock::before {
@@ -146,7 +185,7 @@
     height: 60px;
     margin-bottom: 10px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 40px;
       margin: 0;
       width: 80px;
@@ -154,12 +193,24 @@
     }
   }
 
+  &--clock::after {
+    content: "4";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    color: $background-grey;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     min-width: 201px;
     margin: 0;
     padding: 0;
     padding-right: 29px;
-    padding-top: 151px;
+    padding-top: 131px;
     padding-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
