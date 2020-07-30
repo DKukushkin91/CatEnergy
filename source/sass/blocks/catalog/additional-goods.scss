@@ -16,9 +16,13 @@
   font-weight: 400;
   border-top: 1px solid $border-catalog;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
@@ -30,6 +34,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   list-style: none;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     border: 1px solid $border-catalog;
@@ -120,16 +126,19 @@
 }
 
 .additional-goods__link {
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
-  margin-bottom: 30px;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 0;
   padding-left: 109px;
   padding-right: 110px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: center;

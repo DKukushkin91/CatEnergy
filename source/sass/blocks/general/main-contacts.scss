@@ -1,13 +1,56 @@
 .main-contacts {
-  display: flex;
   padding: 0;
-  padding-top: 28px;
-  padding-left: 19px;
-  padding-bottom: 22px;
-  padding-right: 19px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+
+.main-contacts__wrapper {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 36px;
+  align-items: center;
 
   &--grey {
-    background-color: $background-grey;
+    @media (min-width: $tablet-width) {
+      background-color: $background-grey;
+      align-content: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 62px;
+    padding-bottom: 58px;
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: $basic-white;
+    width: 570px;
+    top: 95px;
+    left: 110px;
+    padding: 66px 89px 60px 76px;
+  }
+}
+
+.main-contacts__inner {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-content: center;
   }
 }
 
@@ -20,20 +63,21 @@
   line-height: 18px;
   color: $contacts-text;
   text-align: left;
+  margin-right: 20px;
+  width: 50%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
     padding: 0;
-    padding-left: 20px;
-    padding-right: 290px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-right: 225px;
   }
 
   &--js {
-  @media (min-width: $desktop-width) {
-    padding: 0;
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-right: 30px;
     }
   }
 }
@@ -48,10 +92,25 @@
   color: $contacts-text;
   text-align: left;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    padding: 20px;
+  }
+
+  &--js:first-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--js {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 }

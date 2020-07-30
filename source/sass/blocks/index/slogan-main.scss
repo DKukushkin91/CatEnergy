@@ -6,7 +6,8 @@
   color: $basic-white;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 center;
+  background-size: cover;
   padding-top: 27px;
   padding-left: 25px;
   padding-right: 25px;
@@ -14,6 +15,8 @@
   margin: 0;
   margin-bottom: 135px;
   line-height: 14px;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     vertical-align: top;
@@ -73,6 +76,8 @@
   margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
 
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -106,6 +111,8 @@
   padding-left: 72px;
   padding-right: 72px;
   margin-bottom: 22px;
+  width: 100%;
+  box-sizing: border-box;
 
   &::after {
     content: "";

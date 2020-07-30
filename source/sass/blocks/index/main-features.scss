@@ -70,6 +70,7 @@
   margin-bottom: 20px;
   padding: 0;
   padding-top: 5px;
+  padding-left: 80px;
   z-index: 1;
 
   &--eco::before {
@@ -93,17 +94,19 @@
     }
   }
 
-  &--eco::after {
-    content: "1";
-    position: absolute;
-    top: 0;
-    right: 5%;
-    z-index: -1;
-    color: $background-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    &--eco::after {
+      content: "1";
+      position: absolute;
+      top: 0;
+      right: 5%;
+      z-index: -1;
+      color: $background-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+    }
   }
 
   &--easy::before {
@@ -127,16 +130,18 @@
     }
   }
 
-  &--easy::after {
-    content: "2";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    color: $background-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
+  @media (min-width: $tablet-width) {
+    &--easy::after {
+      content: "2";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      color: $background-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 
   &--eat::before {
@@ -160,16 +165,18 @@
     }
   }
 
-  &--eat::after {
-    content: "3";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    color: $background-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
+  @media (min-width: $tablet-width) {
+    &--eat::after {
+      content: "3";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      color: $background-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 
   &--clock::before {
@@ -193,16 +200,18 @@
     }
   }
 
-  &--clock::after {
-    content: "4";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    color: $background-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
+  @media (min-width: $tablet-width) {
+    &--clock::after {
+      content: "4";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      color: $background-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
