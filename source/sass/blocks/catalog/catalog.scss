@@ -21,6 +21,7 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+    margin-bottom: 83px;
   }
 }
 
@@ -39,7 +40,7 @@
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     justify-content: space-between;
-    row-gap: 63px;
+    row-gap: 126px;
   }
 }
 
@@ -90,6 +91,100 @@
 .catalog__link {
   margin-right: 10px;
   text-decoration: none;
+  display: relative;
+
+  @media (min-width: $desktop-width) {
+    &--smallchicken::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 161px;
+      height: 172px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/chicken-small-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--bigchicken::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 172px;
+      height: 201px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/chicken-big-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--smallfish::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 163px;
+      height: 174px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/fish-small-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--bigfish::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 172px;
+      height: 196px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/fish-big-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--smallbuckwheat::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 161px;
+      height: 172px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/buckwheat-small-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--bigbuckwheat::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 172px;
+      height: 201px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/buckwheat-big-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--smallrice::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 163px;
+      height: 174px;
+      top: -90px;
+      margin-bottom: -90px;
+      background-image: url("../img/rice-small-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 .catalog__icon {
@@ -97,7 +192,7 @@
   margin-right: 10px;
   flex-grow: 1;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -143,11 +238,12 @@
 .catalog__inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-grey;
     margin-bottom: 5px;
+    justify-content: space-between;
   }
 }
 

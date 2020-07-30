@@ -21,6 +21,9 @@
   padding: 186px 61px 43px 58px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: center;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
