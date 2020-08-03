@@ -38,29 +38,29 @@
   display: none;
 
   @media (max-width: $mobile-width) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-color: $basic-white;
-  cursor: pointer;
-  border: none;
-  outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: $basic-white;
+    cursor: pointer;
+    border: none;
+    outline: none;
   }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   @media (max-width: $mobile-width) {
-  content: "";
-  position: absolute;
-  top: 24px;
-  left: -20px;
-  width: 24px;
-  height: 2px;
-  background-color: $basic-black;
-  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -20px;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+    box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
   }
 }
 
@@ -69,15 +69,15 @@
     top: 24px;
     right: -20px;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -43px;
-    width: 25px;
-    height: 2px;
-    background-color: $basic-black;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -43px;
+      width: 25px;
+      height: 2px;
+      background-color: $basic-black;
     }
   }
 
@@ -92,10 +92,6 @@
 }
 
 @media (max-width: $mobile-width) {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-
   .main-nav--closed .main-nav__item {
     display: none;
   }
