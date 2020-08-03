@@ -15,8 +15,9 @@
   align-items: center;
 
   &--grey {
+    background-color: $background-grey;
+
     @media (min-width: $tablet-width) {
-      background-color: $background-grey;
       align-content: center;
     }
   }

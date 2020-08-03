@@ -34,9 +34,10 @@
 
     <main class="main-form">
       <h1 class="main-form__title">Подбор программы</h1>
+      <h2 class="main-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <form class="main-form__form">
+        <div class="main-form__container main-form__container--questionnaire">
         <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
           <label class="main-form__label">имя:*
             <input class="main-form__input" type="text" placeholder="барсик">
           </label>
@@ -58,14 +59,17 @@
             <input class="main-form__radiobtn visually-hidden" name="radio" type="radio">
           </label>
         </fieldset>
+      </div>
         <fieldset class="main-form__fieldset main-form__fieldset--green">
           <legend class="main-form__caption">Контактные данные (владельца кота)</legend>
+          <div class="main-form__container main-form__container--contacts">
           <label class="main-form__label main-form__label--email">e-mail:*
             <input class="main-form__input" type="email" placeholder="kuklachev@gmail.com">
           </label>
           <label class="main-form__label main-form__label--tel">телефон:*
             <input class="main-form__input" type="tel" placeholder="8 (960) 900-60-90">
           </label>
+        </div>
         </fieldset>
         <fieldset class="main-form__fieldset main-form__fieldset--green">
           <legend class="main-form__caption">Комментарий</legend>
@@ -73,7 +77,7 @@
         </fieldset>
         <fieldset class="main-form__fieldset main-form__fieldset--green">
           <legend class="main-form__caption">Дополнительно</legend>
-          <div class="main-form__grid">
+          <div class="main-form__container main-form__container--options">
             <label class="main-form__options">сахарозаменитель
               <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox" checked>
             </label>

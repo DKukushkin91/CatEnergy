@@ -19,6 +19,7 @@
 }
 
 .additional-goods__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 25px;
@@ -38,6 +39,27 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    margin-bottom: 56px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 70px;
+      background-color: $basic-green;
+      left: -110px;
+      bottom: 40px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 957px;
+      background-color: $basic-green;
+      right: -110px;
+      bottom: 40px;
+    }
   }
 }
 
@@ -263,9 +285,17 @@
       top: -20px;
       left: -350px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 82px;
+      top: 55px;
+      left: 80px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding: 184px 40px 42px 40px;
   }
 }
