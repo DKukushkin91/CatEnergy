@@ -94,10 +94,110 @@
   text-decoration: none;
   display: relative;
 
+  &--smallchicken::before {
+    content: "";
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 68px;
+      height: 86px;
+      top: 0;
+      margin-bottom: 0;
+      background-image: url("../img/chicken-small-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  &--bigchicken::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 84px;
+    height: 100px;
+    top: 0;
+    margin-bottom: 0;
+    background-image: url("../img/chicken-big-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--smallfish::before {
+    content: "";
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 68px;
+      height: 86px;
+      top: 0;
+      margin-bottom: 0;
+      background-image: url("../img/fish-small-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  &--bigfish::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 84px;
+    height: 100px;
+    top: 0;
+    margin-bottom: 0;
+    background-image: url("../img/fish-big-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--smallbuckwheat::before {
+    content: "";
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 68px;
+      height: 86px;
+      top: 0;
+      margin-bottom: 0;
+      background-image: url("../img/buckwheat-small-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  &--bigbuckwheat::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 84px;
+    height: 100px;
+    top: 0;
+    margin-bottom: 0;
+    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--smallrice::before {
+    content: "";
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 68px;
+      height: 86px;
+      top: 0;
+      margin-bottom: 0;
+      background-image: url("../img/rice-small-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+
   @media (min-width: $desktop-width) {
     &--smallchicken::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 161px;
       height: 172px;
@@ -111,6 +211,7 @@
     &--bigchicken::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 172px;
       height: 201px;
@@ -124,6 +225,7 @@
     &--smallfish::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 163px;
       height: 174px;
@@ -137,6 +239,7 @@
     &--bigfish::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 172px;
       height: 196px;
@@ -150,6 +253,7 @@
     &--smallbuckwheat::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 161px;
       height: 172px;
@@ -163,6 +267,7 @@
     &--bigbuckwheat::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 172px;
       height: 201px;
@@ -176,6 +281,7 @@
     &--smallrice::before {
       content: "";
       display: inline-block;
+      vertical-align: middle;
       position: relative;
       width: 163px;
       height: 174px;

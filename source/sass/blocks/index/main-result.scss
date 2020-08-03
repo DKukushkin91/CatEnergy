@@ -11,6 +11,8 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-color: $basic-white;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
