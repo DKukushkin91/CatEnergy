@@ -13,6 +13,7 @@
   background-color: $basic-white;
   height: 100%;
   margin: 0 auto;
+  counter-reset: section;
 }
 
 .page__container {
@@ -27,7 +28,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
@@ -39,8 +40,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    max-width: 1440px;
+    width: 1300px;
+    max-width: 1300px;
     padding: 0;
     margin: 0 auto;
   }

@@ -282,6 +282,7 @@
   border: 1px solid $input-border;
   min-width: 248px;
   min-height: 132px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     display: inline-block;

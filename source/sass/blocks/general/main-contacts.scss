@@ -10,8 +10,9 @@
 .main-contacts__wrapper {
   display: flex;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 36px;
+  padding-right: 10px;
+  padding-bottom: 28px;
+  padding-top: 2px;
   align-items: center;
 
   &--grey {
@@ -40,7 +41,7 @@
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 110px;
+    left: 70px;
     padding: 66px 89px 60px 76px;
   }
 }
@@ -64,8 +65,8 @@
   line-height: 18px;
   color: $contacts-text;
   text-align: left;
-  margin-right: 20px;
-  width: 50%;
+  margin-right: 10px;
+  width: 65%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
