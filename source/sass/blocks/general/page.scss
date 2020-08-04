@@ -23,26 +23,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-}
-
-.page__container--desk {
-  @media (min-width: $tablet-width) {
     max-width: 1219px;
-    padding: 0;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1300px;
     max-width: 1300px;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 }

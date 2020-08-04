@@ -30,6 +30,12 @@
   @media (min-width: $desktop-width) {
     background-image: none;
     color: $basic-black;
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 720px;
+    padding-top: 111px;
+    padding-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -53,6 +59,15 @@
     margin: 0;
     width: 414px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .slogan-main__text {
@@ -69,6 +84,11 @@
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -95,6 +115,11 @@
     padding-right: 382px;
     padding-bottom: 526px;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 267px;
+    padding-left: 80px;
   }
 }
 
@@ -130,9 +155,20 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
     }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 552px;
+      height: 449px;
+      left: 360px;
+      bottom: -120px;
+      z-index: 2;
+    }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 18px;
     padding-left: 10px;
@@ -141,5 +177,9 @@
     margin: 0;
     width: 224px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }

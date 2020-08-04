@@ -46,62 +46,29 @@
 }
 
 .catalog__item {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
-  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 11px;
-  padding-bottom: 14px;
+  padding-top: 6px;
+  padding-bottom: 8px;
   border-top: 1px solid $border-catalog;
-  width: 100%;
   box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    text-align: center;
-    background-color: $background-grey;
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--bg {
-      background-color: $basic-white;
-      border: 1px solid $background-grey;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 39px;
-    padding-left: 38px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-}
-
-.catalog__link {
-  margin-right: 10px;
-  text-decoration: none;
-  display: relative;
 
   &--smallchicken::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 68px;
     height: 86px;
-    top: 0;
+    top: 20px;
     margin-bottom: 0;
     background-image: url("../img/chicken-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -110,12 +77,12 @@
 
   &--bigchicken::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 84px;
     height: 100px;
-    top: 0;
+    top: 11px;
     margin-bottom: 0;
     background-image: url("../img/chicken-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -124,12 +91,12 @@
 
   &--smallfish::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 68px;
     height: 86px;
-    top: 0;
+    top: 20px;
     margin-bottom: 0;
     background-image: url("../img/fish-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -138,12 +105,12 @@
 
   &--bigfish::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 84px;
     height: 100px;
-    top: 0;
+    top: 11px;
     margin-bottom: 0;
     background-image: url("../img/fish-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -152,12 +119,12 @@
 
   &--smallbuckwheat::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 68px;
     height: 86px;
-    top: 0;
+    top: 20px;
     margin-bottom: 0;
     background-image: url("../img/buckwheat-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -166,12 +133,12 @@
 
   &--bigbuckwheat::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 84px;
     height: 100px;
-    top: 0;
+    top: 11px;
     margin-bottom: 0;
     background-image: url("../img/buckwheat-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -180,18 +147,17 @@
 
   &--smallrice::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
+    vertical-align: baseline;
     width: 68px;
     height: 86px;
-    top: 0;
+    top: 20px;
     margin-bottom: 0;
     background-image: url("../img/rice-small-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
-
 
   @media (min-width: $desktop-width) {
     &--smallchicken::before {
@@ -292,12 +258,42 @@
       background-position: center;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    text-align: center;
+    background-color: $background-grey;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--bg {
+      background-color: $basic-white;
+      border: 1px solid $background-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 39px;
+    padding-left: 38px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
 }
 
 .catalog__icon {
   margin: 0;
   margin-right: 10px;
-  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -307,7 +303,7 @@
 .catalog__text {
   margin: 0;
   margin-bottom: 10px;
-  padding: 0;
+  width: 50%;
   color: $catalog-title;
   font-size: 16px;
   line-height: 20px;
@@ -323,6 +319,9 @@
 }
 
 .catalog__description-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -332,7 +331,6 @@
   padding: 0;
   list-style: none;
   width: 150px;
-  flex-grow: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -345,7 +343,7 @@
 .catalog__inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-grey;
@@ -409,9 +407,11 @@
   box-sizing: border-box;
 
   & .catalog__text {
+    width: auto;
     text-align: center;
     color: $contacts-text;
     margin-bottom: 10px;
+
 
     @media (min-width: $tablet-width) {
       font-family: "Oswald", sans-serif;
@@ -432,7 +432,9 @@
 
   & .catalog__features {
     margin: 0;
+    width: auto;
     margin-bottom: 10px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       font-family: "Arial", sans-serif;

@@ -1,7 +1,9 @@
 .slider-cat {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
+  margin-top: 23px;
   padding: 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -28,7 +30,10 @@
   }
 }
 
-.slider-cat__toggle {
+.slider-cat__button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -37,7 +42,6 @@
   line-height: 20px;
   background: none;
   border: none;
-  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -46,5 +50,26 @@
     font-size: 20px;
     padding: 0;
     margin-right: 10px;
+  }
+}
+
+.slider-cat__bar {
+  display: inline-block;
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-grey;
+  border-radius: 15px;
+  background-color: $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: $basic-green;
+    border-radius: 10px;
+    top: 4px;
+    left: 4px;
   }
 }

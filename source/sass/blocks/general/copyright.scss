@@ -26,12 +26,12 @@
 }
 
 .copyright__logo {
+  text-decoration: none;
   width: 27px;
   height: 34px;
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
-  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 27px;
