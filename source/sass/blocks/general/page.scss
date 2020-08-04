@@ -17,12 +17,11 @@
 }
 
 .page__container {
-  width: auto;
+  max-width: $mobile-width;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
     max-width: 1219px;
   }
 

@@ -1,10 +1,13 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-  padding-top: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
   border-top: 1px solid $footer-border;
 
   @media (min-width: $tablet-width) {
@@ -18,23 +21,19 @@
   text-decoration: none;
   font-family: "Arial", sans-serif;
   color: $text-color;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
     line-height: 18px;
   }
 }
 
-.copyright__logo {
-  text-decoration: none;
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 
-  @media (min-width: $tablet-width) {
-    width: 27px;
-    height: 34px;
+.copyright__logo {
+  display: block;
+
+  path {
+    fill: $icon-color;
   }
 }
+
