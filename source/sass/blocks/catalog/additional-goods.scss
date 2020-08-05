@@ -22,15 +22,25 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 24px;
+  padding-left: 19px;
   padding-right: 20px;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
   font-weight: 400;
-  border-top: 1px solid $border-catalog;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      box-sizing: border-box;
+      left: 267px;
+      bottom: 31px;
+      background-color: $basic-green;
+    }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -65,6 +75,7 @@
 
 .additional-goods__list {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -87,8 +98,14 @@
 
 .additional-goods__item {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
+  margin-bottom: 14px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $border-grey;
+
+  &:first-child {
+    border-top: 1px solid $border-grey;
+    padding-top: 15px;
+  };
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin: 0;
@@ -125,7 +142,6 @@
 .additional-goods__name {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
@@ -133,7 +149,6 @@
   color: $catalog-title;
   text-transform: uppercase;
   text-align: left;
-  border-top: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-flex;
@@ -158,7 +173,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
   padding-bottom: 10px;
   font-size: 14px;
@@ -205,8 +220,8 @@
   line-height: 0;
   padding-left: 109px;
   padding-right: 110px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
 
@@ -221,15 +236,10 @@
 }
 
 .additional-goods__inner {
-  padding: 0;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 39px;
-  padding-bottom: 35px;
-  margin: 0;
+
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 71px 124px 69px 423px;

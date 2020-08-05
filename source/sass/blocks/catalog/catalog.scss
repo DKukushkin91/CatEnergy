@@ -7,8 +7,8 @@
 .catalog__title {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 41px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
@@ -50,26 +50,30 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 6px;
+  padding-top: 10px;
   padding-bottom: 8px;
   border-top: 1px solid $border-catalog;
   box-sizing: border-box;
+
+  &:last-child {
+    border-bottom: 1px solid $border-catalog;
+  }
 
   &--smallchicken::before {
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 68px;
     height: 86px;
-    top: 20px;
-    margin-bottom: 0;
+    top: 18px;
+    left: 36px;
     background-image: url("../img/chicken-small-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -79,11 +83,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 84px;
     height: 100px;
-    top: 11px;
-    margin-bottom: 0;
+    top: 15px;
+    left: 29px;
     background-image: url("../img/chicken-big-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -93,11 +97,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 68px;
-    height: 86px;
-    top: 20px;
-    margin-bottom: 0;
+    height: 78px;
+    top: 34px;
+    left: 36px;
     background-image: url("../img/fish-small-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -107,11 +111,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 84px;
     height: 100px;
-    top: 11px;
-    margin-bottom: 0;
+    top: 15px;
+    left: 29px;
     background-image: url("../img/fish-big-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -121,11 +125,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 68px;
-    height: 86px;
-    top: 20px;
-    margin-bottom: 0;
+    height: 78px;
+    top: 34px;
+    left: 36px;
     background-image: url("../img/buckwheat-small-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -135,11 +139,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 84px;
     height: 100px;
-    top: 11px;
-    margin-bottom: 0;
+    top: 15px;
+    left: 29px;
     background-image: url("../img/buckwheat-big-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -149,11 +153,11 @@
     content: "";
     position: relative;
     display: inline-block;
-    vertical-align: baseline;
-    width: 68px;
-    height: 86px;
-    top: 20px;
-    margin-bottom: 0;
+    vertical-align: middle;
+    width: 72px;
+    height: 84px;
+    top: 27px;
+    left: 35px;
     background-image: url("../img/rice-small-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -287,6 +291,94 @@
   }
 }
 
+.catalog__item--bg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center ;
+  color: $text-color;
+  padding-top: 71px;
+  padding-bottom: 23px;
+  margin-bottom: 13px;
+
+  & .catalog__text {
+    color: $contacts-text;
+    padding-bottom: 4px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 62px;
+      right: 95px;
+      width: 30px;
+      height: 2px;
+      background-color: $catalog-icon;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 62px;
+      right: 95px;
+      width: 30px;
+      height: 2px;
+      background-color: $catalog-icon;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      line-height: 22px;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-bottom: 23px;
+    }
+  }
+
+  & .catalog__features {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 21px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+}
+
 .catalog__link {
   text-decoration: none;
 }
@@ -300,10 +392,16 @@
   }
 }
 
+.catalog__conteiner {
+  flex-basis: 50%;
+}
+
 .catalog__text {
   margin: 0;
-  margin-bottom: 10px;
-  width: 50%;
+  padding-right: 40px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 13px;
   color: $catalog-title;
   font-size: 16px;
   line-height: 20px;
@@ -327,10 +425,9 @@
   line-height: 16px;
   color: $text-color;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 22px;
   padding: 0;
   list-style: none;
-  width: 150px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -344,6 +441,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-grey;
@@ -372,14 +470,18 @@
 
 .catalog__button {
   font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   font-weight: 400;
   padding-left: 109px;
   padding-right: 110px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
+  grid-column-start: -1;
+  grid-column-end: 1;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -393,64 +495,5 @@
 
   @media (min-width: $desktop-width) {
     min-width: 0;
-  }
-}
-
-.catalog__wrap {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: $text-color;
-  font-size: 12px;
-  line-height: 16px;
-  width: 100%;
-  box-sizing: border-box;
-
-  & .catalog__text {
-    width: auto;
-    text-align: center;
-    color: $contacts-text;
-    margin-bottom: 10px;
-
-
-    @media (min-width: $tablet-width) {
-      font-family: "Oswald", sans-serif;
-      font-size: 20px;
-      line-height: 22px;
-      padding: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
-      margin-bottom: 23px;
-    }
-  }
-
-  & .catalog__features {
-    margin: 0;
-    width: auto;
-    margin-bottom: 10px;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      font-family: "Arial", sans-serif;
-      font-size: 16px;
-      line-height: 18px;
-      text-align: center;
-      padding: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 50px;
-      padding-right: 50px;
-      margin-bottom: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
-    }
   }
 }
