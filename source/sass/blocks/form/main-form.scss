@@ -9,8 +9,9 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 3px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -37,7 +38,7 @@
   padding-top: 5px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 6px;
   margin: 0;
   margin-bottom: 10px;
   border-bottom: 1px solid $footer-border;
@@ -55,6 +56,9 @@
 }
 
 .main-form__fieldset--border {
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     border: 1px solid $border-grey;
     margin-left: 30px;
@@ -73,6 +77,17 @@
 
 .main-form__fieldset--green {
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 12px;
+
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
@@ -90,6 +105,11 @@
   }
 
   &--contacts {
+
+    & .main-form__input {
+      margin-left: 10px;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
@@ -118,11 +138,10 @@
 
 .main-form__subtitle {
   margin: 0;
-  padding: 0;
   padding-top: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 39px;
+  padding-right: 28px;
+  padding-left: 20px;
+  padding-bottom: 31px;
   text-align: left;
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -155,7 +174,7 @@
   color: $text-color;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -163,6 +182,7 @@
 }
 
 .main-form__input {
+  flex-grow: 1;
   text-align: left;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
@@ -176,9 +196,17 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
-  margin-left: 10px;
-  width: 122px;
-  flex-grow: 1;
+  margin-left: 14px;
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border-grey;
+  }
+
+  &:active {
+    border: 1px solid $text-color;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -194,10 +222,10 @@
   text-transform: uppercase;
   color: $catalog-item__title;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 45px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -212,10 +240,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -32px;
-    top: -1px;
-    width: 20px;
-    height: 20px;
+    left: -45px;
+    top: -6px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $border-grey;
     border-radius: 50%;
   }
@@ -223,21 +251,37 @@
   &:checked::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -26px;
-    width: 10px;
-    height: 10px;
+    top: 2px;
+    left: -37px;
+    width: 14px;
+    height: 14px;
     background-color: $basic-green;
     border-radius: 50%;
   }
 }
 
 .main-form__caption {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
-  padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  padding: 0;
+  padding-right: 10px;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -200px;
+    top: 32px;
+    min-width: 158px;
+    width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: $basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -252,6 +296,7 @@
 
 .main-form__label--email {
   position: relative;
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
@@ -261,6 +306,8 @@
 }
 
 .main-form__label--tel {
+  margin: 0;
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     margin: 0;
@@ -275,13 +322,14 @@
   text-transform: uppercase;
   padding: 0;
   padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0;
   border: 1px solid $input-border;
-  min-width: 248px;
-  min-height: 132px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
   resize: none;
 
   @media (min-width: $tablet-width) {
@@ -307,6 +355,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -322,15 +371,15 @@
 .main-form__checkbox {
   position: relative;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 15px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -42px;
-    top: -8px;
-    width: 30px;
-    height: 30px;
+    left: -45px;
+    top: -5px;
+    width: 28px;
+    height: 28px;
     margin-left: 15px;
     border: 1px solid $border-grey;
   }
@@ -339,7 +388,7 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: -18px;
+    left: -24px;
     width: 18px;
     height: 14px;
     background-image: url("../img/icon-tick.svg");
@@ -353,15 +402,15 @@
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  padding-left: 58px;
-  padding-right: 58px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   border: none;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -385,7 +434,7 @@
   font-family: "Arial", sans-serif;
   line-height: 16px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -403,6 +452,8 @@
 }
 
 .main-form__inner {
+  padding: 15px 20px;
+
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;

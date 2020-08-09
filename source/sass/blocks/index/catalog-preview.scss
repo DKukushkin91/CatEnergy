@@ -5,7 +5,7 @@
   padding-left: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 0;
+    padding: 0 30px;
   }
 }
 
@@ -16,6 +16,10 @@
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -35,29 +39,57 @@
   padding-top: 30px;
   padding-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     position: relative;
     padding: 0;
     padding-left: 53px;
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 59px;
     padding-right: 279px;
-    margin-bottom: 45px;
-  }
+    margin-bottom: 29px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     &::before {
       content: "";
       position: absolute;
-      right: 0;
-      top: center;
-      width: 200px;
-      height: 211px;
-      background-color: $basic-green;
+      top: 80px;
+      right: 30px;
+      width: 140px;
+      height: 192px;
       background-image: url("../img/icon-cat-slim.svg");
-      background-position: center;
+      background-position: 0 0;
       background-repeat: no-repeat;
       margin-right: 62px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 63px;
+      top: 92px;
+      background-color: $basic-green;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    &--pro {
+      padding-right: 311px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -33px;
+        top: 137px;
+        width: 268px;
+        height: 112px;
+        background-image: url("../img/icon-cat-pro.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 62px;
+      }
     }
   }
 
@@ -114,6 +146,26 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   &--icon::before {
@@ -122,19 +174,6 @@
     height: 28px;
     top: 4px;
     left: -8px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    text-align: left;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-bottom: 73px;
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
@@ -152,10 +191,10 @@
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;
-    min-width: 377px;
+    min-width: 342px;
     padding: 0;
     border: none;
-    margin-bottom: 52px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,6 +215,10 @@
   text-decoration: none;
   color: $basic-black;
 
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -186,6 +229,18 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 12px;
+
+    @media (min-width: $tablet-width) {
+      right: -48px;
+      bottom: 9px;
+    }
+  }
+
+  &:active::after {
+    width: 32px;
+    right: -46px;
+    bottom: 6px;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {

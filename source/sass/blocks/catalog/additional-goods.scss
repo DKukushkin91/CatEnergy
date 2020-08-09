@@ -239,6 +239,11 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 30px;
 
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {

@@ -17,23 +17,35 @@
     height: 232px;
     top: 17px;
     margin-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/before-tablet@1x.png");
+      background-position: 46px 0;
+      width: 50%;
+      height: 620px;
+      top: -570px;
+      left: 0;
+      margin-bottom: -570px;
+    }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $background-results;
 
     &::before {
       content: "";
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      background-image: url("../img/before-desktop@1x.png");
-      background-position: center;
+      position: relative;
+      display: block;
+      background-image: url("../img/after-tablet@1x.png");
+      background-position: -44vw 0;
       background-repeat: no-repeat;
-      width: 708px;
-      height: 620px;
+      width: 50%;
+      height: 607px;
+      left: 50%;
+      top: 64px;
     }
   }
 

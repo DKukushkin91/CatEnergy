@@ -10,8 +10,9 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-color: $basic-white;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 2px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +31,9 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 63px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +56,9 @@
   @media (min-width: $tablet-width) {
     line-height: 24px;
     font-size: 16px;
+    margin-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,8 +91,11 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    justify-content: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,9 +113,13 @@
   width: 121px;
   margin-bottom: 21px;
 
+
   @media (min-width: $tablet-width) {
-    width: 162px;
-    margin-right: 42px;
+    width: 185px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -154,6 +168,7 @@
     width: 142px;
     padding: 0;
     margin-top: 0;
+    margin-bottom: -15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -180,11 +195,11 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: right;
     font-size: 20px;
-    line-height: 20px;
     margin: 0;
-    margin-left: 50px;
-    width: 180px;
     padding: 10px;
+    padding-right: 0;
+    margin-left: 60px;
+    line-height: 27px;
   }
 
   @media (min-width: $desktop-width) {

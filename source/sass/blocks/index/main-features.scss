@@ -6,7 +6,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 0;
+    padding: 0 30px 68px 30px;
     margin-bottom: 43px;
     border-bottom: 1px solid $border-tablet;
   }
@@ -44,8 +44,8 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 37px;
-    column-gap: 153px;
+    row-gap: 60px;
+    column-gap: 125px;
     padding-right: 66px;
   }
 
@@ -87,7 +87,7 @@
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      top: 40px;
+      top: 38px;
       margin: 0;
       width: 80px;
       height: 80px;
@@ -177,9 +177,9 @@
     min-width: 201px;
     margin: 0;
     padding: 0;
-    padding-right: 29px;
-    padding-top: 131px;
-    padding-bottom: 57px;
+    padding-right: 13px;
+    padding-top: 151px;
+    padding-bottom: 33px;
     font-size: 16px;
     line-height: 24px;
   }

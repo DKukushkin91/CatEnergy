@@ -20,8 +20,9 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     vertical-align: top;
-    padding-left: 45px;
+    padding-left: 77px;
     padding-bottom: 10px;
+    padding-top: 16px;
     background: none;
     margin: 0;
     margin-bottom: 10px;
@@ -94,26 +95,38 @@
 
 .slogan-main__background {
   display: inline-block;
+  vertical-align: middle;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
   box-sizing: border-box;
 
-
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: inline-block;
+    position: relative;
+    vertical-align: middle;
     width: 100%;
     text-align: left;
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 0;
     box-sizing: border-box;
     padding: 0;
-    padding-top: 19px;
-    padding-left: 83px;
-    padding-right: 382px;
+    padding-top: 10px;
+    padding-left: 113px;
+    padding-right: 412px;
     padding-bottom: 526px;
     margin-top: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 29px;
+      top: -19px;
+      width: 709px;
+      height: 609px;
+      z-index: 2;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -170,12 +183,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-bottom: 18px;
     margin: 0;
-    width: 224px;
     font-size: 20px;
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
