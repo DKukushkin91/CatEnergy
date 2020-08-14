@@ -31,16 +31,16 @@
   text-align: left;
   font-weight: 400;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      box-sizing: border-box;
-      left: 267px;
-      bottom: 31px;
-      background-color: $basic-green;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    left: 267px;
+    bottom: 31px;
+    background-color: $basic-green;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -105,7 +105,7 @@
   &:first-child {
     border-top: 1px solid $border-grey;
     padding-top: 15px;
-  };
+  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin: 0;
