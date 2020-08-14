@@ -7,6 +7,7 @@
   font-size: 20px;
   text-transform: uppercase;
   background-color: $basic-white;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,7 +17,6 @@
 }
 
 .main-nav__logo {
-  position: relative;
   width: 190px;
   height: 37px;
   padding-left: 20px;
@@ -38,11 +38,13 @@
 
 .main-nav__toggle {
   display: none;
+  overflow: hidden;
+  padding: 0;
 
   @media (max-width: $mobile-width) {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 24px;
+    right: 13px;
     display: block;
     width: 32px;
     height: 32px;
@@ -57,8 +59,8 @@
   @media (max-width: $mobile-width) {
     content: "";
     position: absolute;
-    top: 24px;
-    left: -20px;
+    top: 0;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: $basic-black;
@@ -68,15 +70,15 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $mobile-width) {
-    top: 22px;
-    right: -30px;
+    top: 20px;
+    right: 13px;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
       top: 10px;
-      left: -43px;
+      left: 0;
       width: 25px;
       height: 2px;
       background-color: $basic-black;
@@ -137,7 +139,7 @@
     line-height: auto;
     font-weight: 400;
 
-    &::before {
+    &--white::before {
       content: "";
       position: absolute;
       width: 720px;

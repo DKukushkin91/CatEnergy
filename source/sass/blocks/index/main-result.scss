@@ -2,8 +2,6 @@
   padding: 0;
   margin: 0;
   background-color: $background-results;
-  padding-left: 20px;
-  padding-right: 21px;
   padding-top: 28px;
   padding-bottom: 33px;
   font-weight: 400;
@@ -46,6 +44,7 @@
 .main-result__text {
   margin: 0;
   margin-bottom: 26px;
+  padding-right: 10px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;

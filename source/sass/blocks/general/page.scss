@@ -10,6 +10,7 @@
   line-height: 18px;
   padding: 0;
   min-width: 320px;
+  max-width: $desktop-width;
   background-color: $basic-white;
   height: 100%;
   margin: 0 auto;
@@ -19,13 +20,23 @@
 .page__container {
   max-width: $mobile-width;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+
+  &--footer {
+    background-color: $background-grey;
+  }
+
+  &--main-result {
+    background-color: $background-results;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 1219px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+    width: 1440px;
+    padding: 0 110px;
   }
 }

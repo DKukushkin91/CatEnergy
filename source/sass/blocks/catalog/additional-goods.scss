@@ -24,20 +24,21 @@
   padding: 0;
   padding-top: 15px;
   padding-bottom: 24px;
-  padding-left: 19px;
-  padding-right: 20px;
+
   font-size: 24px;
   line-height: 24px;
   text-align: left;
   font-weight: 400;
+  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 100vw;
+    transform: translate(100%);
+    right: 15%;
     height: 2px;
     box-sizing: border-box;
-    left: 267px;
     bottom: 31px;
     background-color: $basic-green;
   }

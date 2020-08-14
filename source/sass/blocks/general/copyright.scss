@@ -29,7 +29,9 @@
 
 
 .copyright__logo {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
 
   path {
     fill: $icon-color;

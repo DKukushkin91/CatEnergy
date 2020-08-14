@@ -9,8 +9,6 @@
   padding: 0;
   padding-top: 25px;
   padding-bottom: 41px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: left;
   font-size: 36px;
   line-height: 36px;
@@ -49,219 +47,18 @@
 .catalog__item {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   margin-bottom: 18px;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 8px;
   border-top: 1px solid $border-catalog;
-  box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid $border-catalog;
-  }
-
-  &--smallchicken::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 68px;
-    height: 86px;
-    top: 18px;
-    left: 36px;
-    background-image: url("../img/chicken-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--bigchicken::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 84px;
-    height: 100px;
-    top: 15px;
-    left: 29px;
-    background-image: url("../img/chicken-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--smallfish::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 68px;
-    height: 78px;
-    top: 34px;
-    left: 36px;
-    background-image: url("../img/fish-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--bigfish::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 84px;
-    height: 100px;
-    top: 15px;
-    left: 29px;
-    background-image: url("../img/fish-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--smallbuckwheat::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 68px;
-    height: 78px;
-    top: 34px;
-    left: 36px;
-    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--bigbuckwheat::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 84px;
-    height: 100px;
-    top: 15px;
-    left: 29px;
-    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--smallrice::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 72px;
-    height: 84px;
-    top: 27px;
-    left: 35px;
-    background-image: url("../img/rice-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    &--smallchicken::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 161px;
-      height: 172px;
-      top: -60px;
-      margin-bottom: -60px;
-      background-image: url("../img/chicken-small-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--bigchicken::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 172px;
-      height: 201px;
-      top: -90px;
-      margin-bottom: -90px;
-      background-image: url("../img/chicken-big-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--smallfish::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 163px;
-      height: 174px;
-      top: -60px;
-      margin-bottom: -60px;
-      background-image: url("../img/fish-small-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--bigfish::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 172px;
-      height: 196px;
-      top: -90px;
-      margin-bottom: -90px;
-      background-image: url("../img/fish-big-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--smallbuckwheat::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 161px;
-      height: 172px;
-      top: -60px;
-      margin-bottom: -60px;
-      background-image: url("../img/buckwheat-small-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--bigbuckwheat::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 172px;
-      height: 201px;
-      top: -90px;
-      margin-bottom: -90px;
-      background-image: url("../img/buckwheat-big-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--smallrice::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 163px;
-      height: 174px;
-      top: -60px;
-      margin-bottom: -60px;
-      background-image: url("../img/rice-small-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -290,6 +87,10 @@
     flex-direction: column;
     flex-wrap: nowrap;
   }
+}
+
+.catalog__img {
+  flex-grow: 1;
 }
 
 .catalog__item--bg {
@@ -393,14 +194,10 @@
   }
 }
 
-.catalog__conteiner {
-  flex-basis: 50%;
-}
-
 .catalog__text {
   margin: 0;
-  padding-right: 40px;
-  padding-left: 0;
+  padding-right: 9px;
+  padding-left: 2px;
   padding-top: 10px;
   padding-bottom: 13px;
   color: $catalog-title;
@@ -417,6 +214,10 @@
   }
 }
 
+.catalog__conteiner {
+
+}
+
 .catalog__description-list {
   display: flex;
   flex-direction: column;
@@ -429,6 +230,7 @@
   margin-bottom: 22px;
   padding: 0;
   list-style: none;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -481,8 +283,7 @@
   padding-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
-  grid-column-start: -1;
-  grid-column-end: 1;
+  flex-grow: 2;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
