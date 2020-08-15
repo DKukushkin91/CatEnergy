@@ -4,7 +4,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 0 30px 68px 30px;
+    padding-bottom: 68px ;
     margin-bottom: 43px;
     border-bottom: 1px solid $border-tablet;
   }

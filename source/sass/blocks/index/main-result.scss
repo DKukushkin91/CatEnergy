@@ -30,8 +30,6 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,8 +54,6 @@
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 54px;
-    padding-left: 30px;
-    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,16 +62,6 @@
     width: 50%;
     padding: 33px 110px 0 110px;
     box-sizing: border-box;
-  }
-}
-
-.main-result__container {
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -93,8 +79,6 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {

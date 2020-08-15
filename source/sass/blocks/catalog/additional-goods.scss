@@ -1,6 +1,11 @@
 .additional-goods {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
@@ -22,21 +27,19 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 24px;
-
+  padding-top: 28px;
+  padding-bottom: 25px;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
   font-weight: 400;
-  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     width: 100vw;
-    transform: translate(100%);
-    right: 15%;
+    transform: translate(70%);
+    left: 23px;
     height: 2px;
     box-sizing: border-box;
     bottom: 31px;
@@ -78,8 +81,6 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   list-style: none;
@@ -237,9 +238,11 @@
 }
 
 .additional-goods__inner {
+  display: inline-block;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-right: 10px;
@@ -266,7 +269,7 @@
 .additional-goods__text {
   position: relative;
   margin: 0;
-  padding: 186px 61px 43px 58px;
+  padding: 186px 54px 43px 45px;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -292,8 +295,8 @@
     background-position: center;
     width: 56px;
     height: 60px;
-    left: 110px;
-    top: 60px;
+    left: 39%;
+    top: 22%;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       width: 80px;

@@ -18,7 +18,7 @@
 }
 
 .page__container {
-  max-width: $mobile-width;
+  background-color: $basic-white;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -30,9 +30,18 @@
     background-color: $background-results;
   }
 
+  &--main-contacts {
+    background-color: $background-grey;
+  }
+
+
   @media (min-width: $tablet-width) {
     max-width: 1219px;
-    padding: 0 60px;
+    padding: 0 30px;
+
+    &--main-result-white {
+      background-color: $basic-white;
+    }
   }
 
   @media (min-width: $desktop-width) {

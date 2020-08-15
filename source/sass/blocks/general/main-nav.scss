@@ -155,11 +155,26 @@
 }
 
 .main-nav__item {
-  border-top: 1px solid $border-color;
   padding-top: 22px;
   padding-bottom: 24px;
   padding-left: 69px;
   padding-right: 70px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width:$tablet-width) {
+      border: none;
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid $border-color;
+
+    @media (min-width:$tablet-width) {
+      border: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

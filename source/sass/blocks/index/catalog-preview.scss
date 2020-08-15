@@ -1,10 +1,6 @@
 .catalog-preview {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 0 30px;
-  }
 }
 
 .catalog-preview__list {
@@ -17,6 +13,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,13 +47,12 @@
       content: "";
       position: absolute;
       top: 80px;
-      right: 30px;
+      right: 90px;
       width: 140px;
       height: 192px;
       background-image: url("../img/icon-cat-slim.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
-      margin-right: 62px;
       z-index: 1;
     }
 
@@ -79,7 +75,7 @@
       &::before {
         content: "";
         position: absolute;
-        right: -33px;
+        left: 412px;
         top: 137px;
         width: 268px;
         height: 112px;
