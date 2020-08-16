@@ -31,10 +31,10 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left: 71px;
-    padding-top: 57px;
-    padding-bottom: 63px;
-    padding-right: 72px;
+    padding-left: 41px;
+    padding-right: 42px;
+    padding-top: 65px;
+    padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,8 +125,6 @@
 .main-contacts__map {
   @media (min-width: $tablet-width) {
     height: 400px;
-    overflow: hidden;
-    outline: none;
-    border: none;
+
   }
 }

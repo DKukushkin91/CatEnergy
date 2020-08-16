@@ -42,6 +42,10 @@
     &--main-result-white {
       background-color: $basic-white;
     }
+
+    &--form {
+      padding: 0 35px 0 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {

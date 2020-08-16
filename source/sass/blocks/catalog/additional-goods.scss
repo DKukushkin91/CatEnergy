@@ -142,7 +142,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 26px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     padding-left: 38px;
     padding-right: 38px;
 
@@ -317,6 +317,7 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background: none;
     padding: 0;
+    text-align: left;
   }
 
   &::before {
