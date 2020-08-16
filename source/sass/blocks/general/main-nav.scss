@@ -15,6 +15,11 @@
     padding: 0 30px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .main-nav__logo {
@@ -25,10 +30,13 @@
   padding-top: 12px;
   padding-right: 20px;
 
-
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-top: 32px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
   }
 }
 
@@ -143,14 +151,15 @@
     &--white::before {
       content: "";
       position: absolute;
-      width: 720px;
-      height: 696px;
+      width: 100%;
+      min-height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      bottom: 30px;
+      background-size: cover;
+      left: 0;
       top: 0;
-      z-index: -1;
+      z-index: 1;
     }
   }
 }
@@ -205,6 +214,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--active-white {
+      &::after {
+        background-color: $basic-white;
+      }
+    }
     padding: 0;
   }
 }
