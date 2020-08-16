@@ -53,7 +53,7 @@
     line-height: 36px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
 
     &::before {
       content: "";
@@ -140,9 +140,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 28px;
     padding-left: 38px;
     padding-right: 38px;
 
@@ -153,7 +153,7 @@
 
     &:first-child {
       border-top: none;
-      padding-top: 24px;
+      padding-top: 26px;
     }
   }
 
@@ -189,7 +189,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -216,10 +216,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    width: 30%;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,6 +233,10 @@
 
 .additional-goods__features {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 51px;
+  }
 }
 
 .additional-goods__features-name {

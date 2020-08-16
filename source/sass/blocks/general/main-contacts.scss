@@ -1,5 +1,6 @@
 .main-contacts {
   padding: 0;
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -125,5 +126,7 @@
   @media (min-width: $tablet-width) {
     height: 400px;
     overflow: hidden;
+    outline: none;
+    border: none;
   }
 }
