@@ -36,7 +36,6 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     position: relative;
-    padding: 0;
     padding-left: 53px;
     padding-top: 77px;
     padding-bottom: 59px;
@@ -75,14 +74,13 @@
       &::before {
         content: "";
         position: absolute;
-        left: 412px;
+        right: 27px;
         top: 137px;
         width: 268px;
         height: 112px;
         background-image: url("../img/icon-cat-pro.svg");
         background-position: center;
         background-repeat: no-repeat;
-        margin-right: 62px;
       }
     }
   }
