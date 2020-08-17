@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 }
 
@@ -88,7 +88,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 52px;
     padding-right: 51px;
-    padding-top: 77px;
+    padding-top: 67px;
     padding-bottom: 55px;
     margin: 0;
   }
@@ -122,7 +122,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: none;
+      width: 70px;
+      height: 97px;
+      top: -26px;
+      left: 15px;
     }
   }
 
@@ -138,8 +141,15 @@
     height: 50px;
     border-radius: 50%;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: -20px;
+      left: 0;
     }
   }
 
@@ -154,7 +164,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 73px;
+    margin-bottom: 64px;
+    padding: 10px;
+    padding-left: 162px;
+    padding-right: 99px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -165,6 +178,13 @@
     height: 28px;
     top: 4px;
     left: -8px;
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 0;
+      left: -18px;
+    }
   }
 }
 
@@ -192,7 +212,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     padding: 0;
     border: none;
   }
@@ -210,6 +230,13 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:active::after {
+    width: 32px;
+    right: -46px;
+    bottom: 6px;
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -225,16 +252,17 @@
       right: -48px;
       bottom: 9px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -52px;
+    }
   }
 
-  &:active::after {
-    width: 32px;
-    right: -46px;
-    bottom: 6px;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
   }
 }

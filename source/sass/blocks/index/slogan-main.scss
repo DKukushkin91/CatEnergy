@@ -33,10 +33,10 @@
     background-image: none;
     color: $basic-black;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 720px;
-    padding-top: 111px;
-    padding-bottom: 0;
+    padding-left: 70px;
+    padding-right: 600px;
+    padding-top: 78px;
+    padding-bottom: 47px;
     margin: 0;
   }
 }
@@ -91,6 +91,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -173,9 +178,8 @@
       background-repeat: no-repeat;
       width: 552px;
       height: 449px;
-      left: 360px;
-      bottom: -120px;
-      z-index: 2;
+      left: 368px;
+      bottom: -81px;
     }
   }
 

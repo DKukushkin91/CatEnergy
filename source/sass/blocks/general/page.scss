@@ -51,5 +51,9 @@
   @media (min-width: $desktop-width) {
     min-width: 1220px;
     padding: 0 110px;
+
+    &--header {
+      overflow: visible;
+    }
   }
 }

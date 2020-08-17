@@ -1,7 +1,7 @@
 .main-result {
   padding: 0;
   margin: 0;
-  background-color: $background-results;
+
   padding-top: 28px;
   padding-bottom: 33px;
   font-weight: 400;
@@ -34,8 +34,10 @@
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
-    padding: 0 110px 76px 110px;
+    background-size: 100vw;
+    padding: 0;
     margin: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -191,4 +193,9 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.main-result__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }

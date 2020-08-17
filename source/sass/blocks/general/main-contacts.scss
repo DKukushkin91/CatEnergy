@@ -45,7 +45,7 @@
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 70px;
+    left: 340px;
     padding: 66px 89px 60px 76px;
   }
 }
@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-content: center;
+    padding: 0;
   }
 }
 
@@ -103,6 +103,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
 
   &--js:first-child {
@@ -125,5 +129,10 @@
 .main-contacts__map {
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

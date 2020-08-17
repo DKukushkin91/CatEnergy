@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/320.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("../img/Desktop1.jpg");
+    }
+  }
+</style>
+<link href="../pixel-glass/styles.css" rel="stylesheet">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">
@@ -86,6 +112,7 @@
       <section class="main-result">
         <div class="page__container page__container--main-result page__container--main-result-white">
         <h2 class="main-result__title">Живой пример</h2>
+        <div class="main-result__wrapper">
         <p class="main-result__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -102,17 +129,16 @@
             <p class="main-result__cost">затраты на питание: 15&nbsp;000 РУБ.</p>
           </div>
         </div>
-          <div class="page__container page__container--main-result">
-          <div class="main-result__wrapper slider-cat">
+          <div class="main-result__wrap slider-cat">
             <div class="slider-cat__inner">
               <button type="button" class="slider-cat__button">было</button>
               <span class="slider-cat__bar"></span>
               <button type="button" class="slider-cat__button">стало</button>
             </div>
             </div>
-          </div>
+        </div>
       </section>
-    </div>
+
       <div class="main-contacts">
         <div class="main-contacts__wrapper">
           <h3 class="main-contacts__title main-contacts__title--js">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
@@ -123,7 +149,7 @@
         </div>
         <div class="main-contacts__map" id="map" style="width: 100vw; min-height: 362px"></div>
       </div>
-    </div>
+
   </main>
 
   <div class="page__container page__container--footer">
