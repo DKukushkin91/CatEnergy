@@ -22,6 +22,14 @@
     padding-top: 36px;
     margin-bottom: 130px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+    padding-top: 53px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 140px;
+  }
 }
 
 .catalog__list {
@@ -36,6 +44,15 @@
     row-gap: 140px;
     padding: 0 30px;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    padding-top: 15px;
+    row-gap: 144px;
+    column-gap: 80px;
+    margin-bottom: 48px;
   }
 }
 
@@ -106,6 +123,11 @@
           height: 2px;
           background-color: $catalog-icon;
         }
+
+        @media (min-width: $desktop-width) {
+          left: 33%;
+          top: -181%;
+        }
       }
 
       &::after {
@@ -125,6 +147,15 @@
           height: 2px;
           background-color: $catalog-icon;
         }
+
+        @media (min-width: $desktop-width) {
+          left: 34%;
+          top: -181%;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 5px 15px;
       }
     }
 
@@ -144,6 +175,10 @@
         padding-bottom: 85px;
         padding-top: 22px;
       }
+
+      @media (min-width: $desktop-width) {
+        padding: 22px 5px 85px 5px;
+      }
     }
   }
 
@@ -151,6 +186,12 @@
     border: none;
     padding: 40px;
     background-color: $background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px;
+    padding-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -167,6 +208,10 @@
     justify-content: space-between;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+  }
 }
 
 .catalog__link {
@@ -180,6 +225,11 @@
     position: relative;
     top: -35px;
     margin-bottom: -35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -15px;
+    margin-bottom: -15px;
   }
 }
 
@@ -206,6 +256,11 @@
     line-height: 24px;
     text-align: center;
     padding: 10px 55px 23px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    padding: 2px 13px 20px 13px;
   }
 }
 
@@ -242,6 +297,10 @@
       padding-top: 5px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .catalog__button {
@@ -258,5 +317,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
   }
 }
