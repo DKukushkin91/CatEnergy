@@ -55,5 +55,15 @@
     &--header {
       overflow: visible;
     }
+
+    &--main-result-white {
+      background-color: $background-grey;
+      background-image: linear-gradient($basic-white 23%, $background-grey 23%);
+    }
+
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
