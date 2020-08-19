@@ -1,7 +1,6 @@
 .additional-goods {
   margin: 0;
   padding: 0 20px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -63,9 +62,9 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 7.5%;
+      width: 10vw;
       background-color: $basic-green;
-      right: 100%;
+      left: -80px;
       bottom: 40%;
     }
 
@@ -73,9 +72,9 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 46.2%;
+      width: 100vw;
       background-color: $basic-green;
-      left: 58%;
+      left: calc(100% - 30vw);
       bottom: 40%;
     }
   }
@@ -90,9 +89,9 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 6%;
+      width: 10vw;
       background-color: $basic-green;
-      left: -5.8vw;
+      left: -183px;
       bottom: 40%;
     }
 
@@ -101,8 +100,8 @@
       position: absolute;
       height: 2px;
       background-color: $basic-green;
-      left: 19.5vw;
-      width: 80%;
+      left: 31%;
+      width: 100vw;
       bottom: 40%;
     }
   }
@@ -183,7 +182,6 @@
       padding: 0;
       padding-top: 5px;
       padding-bottom: 5px;
-
     }
   }
 }
@@ -247,7 +245,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-
   }
 }
 

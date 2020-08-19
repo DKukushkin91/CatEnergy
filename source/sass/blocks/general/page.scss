@@ -19,19 +19,21 @@
 .page__container {
   background-color: $basic-white;
   margin: 0 auto;
-
   overflow: hidden;
 
   &--footer {
     background-color: $background-grey;
+    padding: 0 20px;
   }
 
   &--main-result {
     background-color: $background-results;
+    padding: 0 20px;
   }
 
   &--main-contacts {
     background-color: $background-grey;
+    padding: 0 20px;
   }
 
 
@@ -40,11 +42,12 @@
     padding: 0 30px;
 
     &--main-result-white {
-      background-color: $basic-white;
+      background-color: $background-results;
+      background-image: linear-gradient($basic-white 55.5%, $background-results 55.5%);
     }
 
     &--form {
-      padding: 0 70px;
+      padding: 0 30px;
     }
   }
 
@@ -59,11 +62,6 @@
     &--main-result-white {
       background-color: $background-grey;
       background-image: linear-gradient($basic-white 23%, $background-grey 23%);
-    }
-
-    .wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
     }
   }
 }

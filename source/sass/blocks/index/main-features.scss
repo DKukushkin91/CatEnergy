@@ -1,10 +1,13 @@
 .main-features {
   padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-bottom: 68px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 43px;
     border-bottom: 1px solid $border-tablet;
   }

@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+        <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "../pixel-glass/img/MobileIndex.jpg" );
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "../pixel-glass/img/TabletIndex.jpg" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("../pixel-glass/img/DesktopIndex.jpg");
+    }
+  }
+</style>
+<link href="../pixel-glass/styles.css" rel="stylesheet">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">
@@ -86,7 +112,7 @@
       <section class="main-result">
         <div class="page__container page__container--main-result page__container--main-result-white">
         <h2 class="main-result__title">Живой пример</h2>
-        <div class="wrap">
+        <div class="main-result__container">
         <div class="main-result__wrapper">
         <p class="main-result__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без

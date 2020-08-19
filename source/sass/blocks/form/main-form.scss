@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
   font-weight: 400;
+  overflow: hidden;
 }
 
 .main-form__title {
   padding: 0;
-  padding-top: 27px;
+  padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
@@ -22,7 +23,7 @@
     border: none;
     font-size: 60px;
     line-height: 60px;
-    padding-left: 30px;
+    padding-left: 0;
     padding-right: 30px;
     padding-top: 38px;
     padding-bottom: 30px;
@@ -40,7 +41,7 @@
   padding-top: 5px;
   padding-right: 28px;
   padding-left: 20px;
-  padding-bottom: 31px;
+  padding-bottom: 33px;
   text-align: left;
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -51,7 +52,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 0;
+    padding-left: 40px;
     padding-right: 40%;
     margin-bottom: 31px;
   }
@@ -69,9 +70,9 @@
 
 .main-form__fieldset {
   border: none;
-  padding: 0;
+  padding: 0 20px;
   padding-top: 5px;
-  padding-bottom: 6px;
+  padding-bottom: 9px;
   margin: 0;
   margin-bottom: 10px;
   border-bottom: 1px solid $footer-border;
@@ -96,6 +97,7 @@
   }
 
   &--border {
+    padding-top: 5px;
     padding-bottom: 8px;
     margin-bottom: 10px;
 
@@ -125,11 +127,12 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 
     @media (min-width: $tablet-width) {
+      padding: 0 40px;
       margin-bottom: 47px;
     }
 
@@ -147,6 +150,10 @@
 
 .main-form__container {
   &--questionnaire {
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+    }
+
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -179,10 +186,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      padding-right: 25px;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 80px;
+      margin-bottom: 21px;
     }
   }
 }
@@ -198,7 +207,7 @@
   color: $text-color;
   padding: 0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -280,11 +289,12 @@
     content: "";
     position: absolute;
     left: -45px;
-    top: -6px;
+    top: -5px;
     width: 28px;
     height: 28px;
     border: 1px solid $border-grey;
     border-radius: 50%;
+
 
     @media (min-width: $tablet-width) {
       left: -60px;
@@ -292,12 +302,16 @@
       width: 40px;
       height: 40px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: -11px;
+    }
   }
 
   &:checked::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: -37px;
     width: 14px;
     height: 14px;
@@ -325,7 +339,7 @@
   padding: 0;
   padding-right: 22vw;
   padding-top: 17px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   margin-bottom: 20px;
   text-align: left;
 
@@ -335,8 +349,8 @@
     height: 2px;
     width: 100vw;
     background-color: $basic-green;
-    left: 76%;
-    bottom: 49%;
+    left: 75%;
+    bottom: 40%;
 
     @media (min-width: $tablet-width) {
       left: 94%;
@@ -361,7 +375,7 @@
 
     @media (min-width: $desktop-width) {
       width: 70px;
-      left: -110px;
+      left: -140px;
     }
   }
 
@@ -438,6 +452,14 @@
   min-height: 150px;
   resize: none;
 
+  &:hover {
+    border: 1px solid $border-grey;
+  }
+
+  &:active {
+    border: 1px solid $text-color;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: top;
@@ -473,9 +495,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 43px;
-    padding-right: 9%;
     margin: 0;
+    padding: 10px;
+    padding-left: 42px;
   }
 }
 
@@ -537,7 +559,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 60px;
+    margin-right: 49px;
     padding: 0;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -545,11 +567,12 @@
     padding-right: 20px;
     font-size: 20px;
     flex-grow: 1;
-    width: 50%;
+    width: 47%;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    margin-right: 80px;
   }
 }
 
@@ -566,7 +589,9 @@
     text-align: left;
     font-size: 16px;
     flex-grow: 1;
-    width: 50%;
+    width: 60%;
+    padding: 10px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -576,10 +601,12 @@
 }
 
 .main-form__inner {
-  padding: 15px 0;
+  padding: 15px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 70px;
     width: 100%;
     display: flex;
