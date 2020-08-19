@@ -6,9 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+      <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/320.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("../img/Desktop1.jpg");
+    }
+  }
+</style>
+<link href="../pixel-glass/styles.css" rel="stylesheet">
+<script src="../pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">
+  <div class="page__container page__container--header">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a href="index.html" class="main-nav__logo">
@@ -30,10 +57,11 @@
         </ul>
       </nav>
     </header>
+  </div>
 
     <main class="main-form">
-      <h1 class="main-form__title">Подбор программы</h1>
       <div class="page__container page__container--form">
+      <h1 class="main-form__title">Подбор программы</h1>
       <h2 class="main-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <form class="main-form__form">
         <div class="main-form__container main-form__container--questionnaire">

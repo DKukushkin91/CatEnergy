@@ -22,6 +22,8 @@
     display: grid;
     grid-template-columns: 3.7fr 1fr;
     column-gap: 80px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -124,8 +126,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    padding: 0;
     row-gap: 10px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -168,14 +171,19 @@
     grid-template-columns: 2fr 2fr 244px;
     column-gap: 42px;
     border-bottom: 1px solid $border-grey;
-    margin: 0;
     align-items: center;
+    line-height: 20px;
+    justify-content: space-between;
+    margin: 0;
     padding: 0;
     padding-bottom: 5px;
 
     &:first-child {
       border-top: 1px solid $border-grey;
       padding: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
     }
   }
 }
@@ -239,8 +247,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+
   }
 }
 
@@ -312,6 +319,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
+    margin: 0;
   }
 }
 

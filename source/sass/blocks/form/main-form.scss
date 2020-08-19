@@ -28,6 +28,11 @@
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 53px;
+  }
 }
 
 .main-form__subtitle {
@@ -52,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 33px;
     padding-right: 70%;
   }
 }
@@ -84,6 +89,10 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     border: none;
+
+    &--options .main-form__caption {
+      margin-bottom: 57px;
+    }
   }
 
   &--border {
@@ -97,11 +106,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      border: 1px solid $border-grey;
+      border: 1px solid $input-border;
       padding-left: 28px;
-      padding-right: 251px;
+      padding-right: 221px;
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
     }
   }
 
@@ -124,7 +134,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 69px;
+      margin-bottom: 68px;
     }
   }
 
@@ -141,7 +151,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px 80px;
-      margin-bottom: 65px;
+      margin-bottom: 41px;
     }
   }
 
@@ -172,6 +182,7 @@
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
+      padding-right: 25px;
     }
   }
 }
@@ -255,6 +266,10 @@
       margin-bottom: 14px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+  }
 }
 
 .main-form__radiobtn {
@@ -295,6 +310,10 @@
       width: 18px;
       height: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 1px;
+    }
   }
 }
 
@@ -323,6 +342,10 @@
       left: 94%;
       bottom: 35%;
     }
+
+    @media (min-width: $desktop-width) {
+      right: calc(50% - 50vw);
+    }
   }
 
   &::before {
@@ -335,6 +358,11 @@
       left: -70px;
       bottom: 35%;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -345,7 +373,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
+    padding: 0;
+    padding-right: 4vw;
   }
 }
 
@@ -369,6 +399,8 @@
     flex-grow: 1;
     margin: 0;
     margin-right: 78px;
+    padding-right: 0;
+    width: 26%;
   }
 }
 
@@ -441,9 +473,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:first-child) {
-      margin-left: 104px;
-    }
+    padding-left: 43px;
+    padding-right: 9%;
+    margin: 0;
   }
 }
 
