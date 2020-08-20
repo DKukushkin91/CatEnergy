@@ -25,7 +25,7 @@
     line-height: 60px;
     padding-left: 0;
     padding-right: 30px;
-    padding-top: 38px;
+    padding-top: 37px;
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
@@ -103,7 +103,7 @@
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       border: 1px solid $border-grey;
-      padding: 25px 10px 24px 10px;
+      padding: 24px 10px 24px 10px;
       margin-bottom: 58px;
     }
 
@@ -177,7 +177,7 @@
 
   &--options {
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      padding: 10px 10px 10px 12px;
+      padding: 7px 10px 10px 12px;
       margin: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;

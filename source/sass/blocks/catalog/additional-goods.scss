@@ -3,7 +3,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +54,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 40px;
+    padding-left: 37px;
     padding-right: 40px;
     margin-bottom: 56px;
 
@@ -74,7 +74,7 @@
       height: 2px;
       width: 100vw;
       background-color: $basic-green;
-      left: calc(100% - 30vw);
+      left: calc(100% - 38.8vw);
       bottom: 40%;
     }
   }
@@ -204,7 +204,8 @@
     width: 50%;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -252,7 +253,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-right: 51px;
+    margin-right: 57px;
   }
 }
 

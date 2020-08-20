@@ -31,18 +31,16 @@
     }
 
     @media (min-width: $desktop-width) {
-      position: relative;
-      display: block;
       width: 54%;
       height: 536px;
-      top: -550px;
-      left: -48%;
-      margin: 0;
-      margin-right: -48%;
-      margin-bottom: -550px;
+      top: -157px;
+      left: -3px;
+      margin-right: -3px;
+      margin-bottom: -157px;
       padding: 0;
       background-image: url("../img/before-desktop@1x.png");
-      background-position: 10% 0;
+      background-position: 11% 0;
+      background-repeat: no-repeat;
       z-index: 1;
       order: 1;
     }
@@ -72,13 +70,13 @@
         position: relative;
         display: block;
         background-image: url("../img/after-desktop@1x.png");
-        background-position: 90% 0;
+        background-position: 85% 0;
         z-index: 1;
-        width: 48%;
+        width: 46%;
         height: 536px;
-        top: -155px;
-        margin-bottom: -155px;
-        left: 26%;
+        top: -157px;
+        left: -20px;
+        margin-bottom: -157px;
         order: 2;
       }
     }
@@ -86,7 +84,6 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    flex-direction: column-reverse;
     padding: 0;
     background-color: inherit;
   }
@@ -117,8 +114,9 @@
     padding: 0;
     padding-left: 39px;
     padding-right: 0;
-    padding-bottom: 68px;
+    padding-bottom: 58px;
     justify-content: space-between;
+    order: 3;
   }
 }
 
@@ -148,7 +146,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    line-height: 30px;
+    line-height: 32px;
+    padding: 0;
   }
 }
 

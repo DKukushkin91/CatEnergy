@@ -17,7 +17,7 @@
     line-height: 60px;
     border: none;
     padding-bottom: 36px;
-    padding-left: 30px;
+    padding-left: 0;
     padding-right: 30px;
     padding-top: 36px;
     margin-bottom: 130px;
@@ -42,8 +42,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 140px;
-    padding: 0 30px;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,9 +61,39 @@
   padding-top: 3px;
   padding-bottom: 23px;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
+    padding-bottom: 43px;
+    background-color: $background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    padding-top: 38px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
   &:not(:first-child) {
     padding-top: 4px;
     padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+      padding-right: 38px;
+      padding-left: 38px;
+      padding-bottom: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 37px;
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &:first-child {
@@ -81,8 +110,9 @@
       border: 1px solid $background-grey;
     }
   }
+}
 
-  &--bg {
+.catalog__item--bg {
     background-color: $basic-white;
     display: flex;
     flex-direction: column;
@@ -94,6 +124,11 @@
       justify-content: flex-end;
     }
 
+    @media (min-width: $desktop-width) {
+      padding: 10px;
+    }
+
+                                        /*ЗАКЛАДОЧКА*/
     .catalog__text {
       position: relative;
       padding-left: 20px;
@@ -159,7 +194,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding: 5px 15px;
+        padding: 5px 0;
       }
     }
 
@@ -181,23 +216,10 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding: 22px 5px 85px 5px;
+        padding: 22px 0 71px 0;
       }
     }
   }
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 40px;
-    background-color: $background-grey;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 30px;
-    padding-bottom: 40px;
-    text-align: center;
-  }
-}
 
 .catalog__conteiner {
   display: flex;
@@ -214,7 +236,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
+    padding: 0;
   }
 }
 
@@ -244,6 +266,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-top: 0;
   }
 }
 
@@ -261,12 +284,12 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 10px 55px 23px 55px;
+    padding: 10px 55px 20px 55px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    padding: 2px 13px 20px 13px;
+    padding: 2px 13px 25px 13px;
   }
 }
 
@@ -294,8 +317,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     border-bottom: 1px solid $border-grey;
-    padding-top: 5px;
-    padding-bottom: 7px;
+    padding-top: 0;
+    padding-bottom: 9px;
     align-items: center;
     align-content: center;
 
@@ -325,6 +348,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 100%;
   }
 }
