@@ -1,11 +1,77 @@
 .slider-cat {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
   margin: 0;
-  padding: 0;
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/before-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 311px;
+    height: 232px;
+    top: 17px;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/before-tablet@1x.png");
+      background-position: 46px 0;
+      width: 50%;
+      height: 620px;
+      top: -570px;
+      left: 0;
+      margin-bottom: -570px;
+      padding-bottom: 8px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $background-results;
+
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      background-image: url("../img/after-tablet@1x.png");
+      background-position: -44vw 0;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 607px;
+      left: 50%;
+      top: 64px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    padding-bottom: 75px;
+  }
 }
 
-.slider-cat__toggle {
+.slider-cat__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 35px;
+  padding-bottom: 5px;
+}
+
+.slider-cat__button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -14,4 +80,35 @@
   line-height: 20px;
   background: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px dotted $basic-black;
+    font-size: 20px;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+
+.slider-cat__bar {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-grey;
+  border-radius: 15px;
+  background-color: $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: $basic-green;
+    border-radius: 10px;
+    top: 4px;
+    left: 6px;
+  }
 }

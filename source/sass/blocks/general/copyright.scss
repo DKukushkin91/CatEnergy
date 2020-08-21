@@ -1,24 +1,38 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 18px;
+  padding-bottom: 15px;
+  padding-top: 25px;
   border-top: 1px solid $footer-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    align-items: center;
+  }
 }
 
 .copyright__link {
   text-decoration: none;
   font-family: "Arial", sans-serif;
   color: $text-color;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 18px;
+  }
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  text-decoration: none;
-}
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  path {
+    fill: $icon-color;
+  }
+

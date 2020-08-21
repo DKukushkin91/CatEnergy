@@ -1,7 +1,7 @@
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [59.938635, 30.323118],
-          zoom: 15
+          zoom: 18
       }, {
           searchControlProvider: 'yandex#search'
       }),
@@ -11,7 +11,6 @@ ymaps.ready(function () {
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           hintContent: 'Cat energy',
-          balloonContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург'
       }, {
           iconLayout: 'default#image',
           iconImageHref: 'img/mappoint.png',
@@ -20,5 +19,5 @@ ymaps.ready(function () {
       });
 
       myMap.geoObjects
-      .add(myPlacemark)
+      .add(myPlacemark);
 });
