@@ -60,6 +60,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 33px;
     padding-right: 70%;
+    padding-left: 0;
   }
 }
 
@@ -138,6 +139,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 68px;
+      padding: 0;
     }
   }
 
@@ -159,6 +161,8 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px 80px;
       margin-bottom: 41px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -572,7 +576,8 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    margin-right: 80px;
+    margin-right: 70px;
+    width: 60%;
   }
 }
 

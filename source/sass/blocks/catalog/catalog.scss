@@ -57,43 +57,25 @@
 
 .catalog__item {
   border-bottom: 1px solid $border-catalog;
-  padding: 0 20px;
-  padding-top: 3px;
+  padding-top: 4px;
   padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    border: none;
     padding-top: 40px;
     padding-right: 38px;
     padding-left: 38px;
     padding-bottom: 43px;
     background-color: $background-grey;
+    border:none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px;
-    padding-top: 38px;
+    padding-top: 37px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 40px;
-    text-align: center;
-  }
-
-  &:not(:first-child) {
-    padding-top: 4px;
-    padding-bottom: 23px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 40px;
-      padding-right: 38px;
-      padding-left: 38px;
-      padding-bottom: 43px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 37px;
-      padding-right: 40px;
-      padding-left: 40px;
-      padding-bottom: 40px;
-    }
   }
 
   &:first-child {
@@ -113,113 +95,118 @@
 }
 
 .catalog__item--bg {
-    background-color: $basic-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: $basic-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  & .catalog__text {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 76px;
+    padding-bottom: 4px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      justify-content: flex-end;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 0;
+      font-size: 20px;
+      line-height: 22px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 10px;
-    }
-
-                                        /*ЗАКЛАДОЧКА*/
-    .catalog__text {
-      position: relative;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 76px;
-      padding-bottom: 4px;
-      text-align: center;
-
-      @media (min-width: $tablet-width) {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 20px;
-        padding-bottom: 0;
-        font-size: 20px;
-        line-height: 22px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 44%;
-        top: 38%;
-        width: 30px;
-        height: 2px;
-        background-color: $catalog-icon;
-
-        @media (min-width: $tablet-width) {
-          left: 38%;
-          top: -93%;
-          width: 60px;
-          height: 2px;
-          background-color: $catalog-icon;
-        }
-
-        @media (min-width: $desktop-width) {
-          left: 33%;
-          top: -181%;
-        }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 44%;
-        top: 38%;
-        width: 30px;
-        height: 2px;
-        background-color: $catalog-icon;
-        transform: rotate(90deg);
-
-        @media (min-width: $tablet-width) {
-          left: 38%;
-          top: -93%;
-          width: 60px;
-          height: 2px;
-          background-color: $catalog-icon;
-        }
-
-        @media (min-width: $desktop-width) {
-          left: 34%;
-          top: -181%;
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        padding: 5px 0;
-      }
-    }
-
-    .catalog__features {
-      font-size: 12px;
-      line-height: 16px;
-      font-family: "Arial", sans-serif;
-      margin: 0;
-      padding-top: 4px;
-      padding-bottom: 21px;
-      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 11px;
       padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 44%;
+      top: 38%;
+      width: 30px;
+      height: 2px;
+      background-color: $catalog-icon;
 
       @media (min-width: $tablet-width) {
-        font-size: 16px;
-        line-height: 18px;
-        padding-bottom: 85px;
-        padding-top: 22px;
+        left: 38%;
+        top: -93%;
+        width: 60px;
+        height: 2px;
+        background-color: $catalog-icon;
       }
 
       @media (min-width: $desktop-width) {
-        padding: 22px 0 71px 0;
+        left: 33%;
+        top: -111%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 44%;
+      top: 38%;
+      width: 30px;
+      height: 2px;
+      background-color: $catalog-icon;
+      transform: rotate(90deg);
+
+      @media (min-width: $tablet-width) {
+        left: 38%;
+        top: -93%;
+        width: 60px;
+        height: 2px;
+        background-color: $catalog-icon;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 33%;
+        top: -111%;
       }
     }
   }
+
+  & .catalog__features {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 21px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      padding-bottom: 85px;
+      padding-top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 12px 0 85px 0;
+    }
+  }
+}
 
 .catalog__conteiner {
   display: flex;
@@ -268,6 +255,10 @@
     width: 100%;
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 1px;
+  }
 }
 
 .catalog__text {
@@ -284,7 +275,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 10px 55px 20px 55px;
+    padding: 15px 55px 20px 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -324,11 +315,15 @@
 
     &:not(:first-child) {
       padding-top: 5px;
+
+      @media (min-width: $desktop-width) {
+        padding-top: 7px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 9px;
+    padding-bottom: 7px;
   }
 }
 
