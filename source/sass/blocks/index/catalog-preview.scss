@@ -1,8 +1,10 @@
 .catalog-preview {
   margin: 0;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 30px;
+  }
 }
 
 .catalog-preview__list {
@@ -10,17 +12,92 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .catalog-preview__item {
   background-color: $background-grey;
-  margin-top: 20px;
+  margin: 0;
+  margin-bottom: 20px;
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+    padding-left: 53px;
+    padding-top: 77px;
+    padding-bottom: 59px;
+    padding-right: 279px;
+    margin-bottom: 29px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 140px;
+      height: 192px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      margin-right: 62px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 63px;
+      top: 92px;
+      background-color: $basic-green;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    &--pro {
+      padding-right: 311px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -33px;
+        top: 137px;
+        width: 268px;
+        height: 112px;
+        background-image: url("../img/icon-cat-pro.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 62px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    padding-right: 51px;
+    padding-top: 77px;
+    padding-bottom: 55px;
+    margin: 0;
+  }
 }
 
 .catalog-preview__title {
@@ -29,21 +106,71 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
+  padding-left: 71px;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 8px;
+    top: -10px;
+    z-index: 1;
     background-image: url("../img/icon-cat-slim.svg");
     width: 50px;
     height: 53px;
-    background-position: center;
+    background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: -6px;
     background-color: $basic-green;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &--icon::before {
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    top: 4px;
+    left: -8px;
   }
 }
 
@@ -52,9 +179,29 @@
   color: $text-color;
   text-align: left;
   margin: 0;
-  margin-bottom: 23px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    min-width: 342px;
+    padding: 0;
+    border: none;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 0;
+    border: none;
+  }
 }
 
 .catalog-preview__link {
@@ -64,6 +211,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   &::after {
     content: "";
@@ -75,5 +226,21 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 12px;
+
+    @media (min-width: $tablet-width) {
+      right: -48px;
+      bottom: 9px;
+    }
+  }
+
+  &:active::after {
+    width: 32px;
+    right: -46px;
+    bottom: 6px;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-size: 20px;
   }
 }

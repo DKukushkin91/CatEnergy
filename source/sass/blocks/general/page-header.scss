@@ -1,4 +1,7 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   padding: 0;
   margin: 0;
 }

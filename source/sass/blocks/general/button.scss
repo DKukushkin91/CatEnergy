@@ -3,9 +3,20 @@
   background-color: $basic-green;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $green-hover;
+  }
 }
 
 .button--grey {
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   font-size: 16px;
   color: $text-color;
@@ -13,5 +24,21 @@
   padding-right: 90px;
   padding-left: 90px;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    min-width: 238px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 0;
+  }
 }

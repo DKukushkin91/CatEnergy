@@ -1,13 +1,60 @@
 .main-contacts {
-  display: flex;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-contacts__wrapper {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 9px;
+  padding-bottom: 28px;
   padding-top: 28px;
-  padding-left: 19px;
-  padding-bottom: 22px;
-  padding-right: 19px;
+  align-items: center;
 
   &--grey {
     background-color: $background-grey;
+    padding-top: 29px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      align-content: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 71px;
+    padding-top: 57px;
+    padding-bottom: 63px;
+    padding-right: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: $basic-white;
+    width: 570px;
+    top: 95px;
+    left: 70px;
+    padding: 66px 89px 60px 76px;
+  }
+}
+
+.main-contacts__inner {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-content: center;
   }
 }
 
@@ -20,6 +67,23 @@
   line-height: 18px;
   color: $contacts-text;
   text-align: left;
+  margin-right: 10px;
+  width: 65%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 0;
+    padding-right: 200px;
+  }
+
+  &--js {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-right: 30px;
+    }
+  }
 }
 
 .main-contacts__address {
@@ -31,4 +95,26 @@
   line-height: 20px;
   color: $contacts-text;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  &--js:first-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--js {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
 }
