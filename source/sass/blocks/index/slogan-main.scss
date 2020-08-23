@@ -109,7 +109,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     position: relative;
-    width: 100vw;
+    width: 100%;
     text-align: left;
     box-sizing: border-box;
     padding: 0;
@@ -190,6 +190,7 @@
     margin: 0;
     font-size: 20px;
     z-index: 3;
+    min-width: 244px;
   }
 
   @media (min-width: $desktop-width) {
