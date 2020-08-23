@@ -9,8 +9,9 @@
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
-  padding: 27px 20px 38px 20px;
+  padding: 25px 20px 40px 20px;
   border-top: 1px solid $footer-border;
+  border-bottom: 1px solid $border-catalog;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -19,8 +20,8 @@
     padding-bottom: 36px;
     padding-left: 0;
     padding-right: 30px;
-    padding-top: 36px;
-    margin-bottom: 130px;
+    padding-top: 38px;
+    margin-bottom: 127px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,16 +58,16 @@
 
 .catalog__item {
   border-bottom: 1px solid $border-catalog;
-  padding-top: 4px;
-  padding-bottom: 23px;
+  padding-top: 0;
+  padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 15px;
     padding-right: 38px;
     padding-left: 38px;
-    padding-bottom: 43px;
+    padding-bottom: 40px;
     background-color: $background-grey;
     border: none;
   }
@@ -76,14 +77,6 @@
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
-  }
-
-  &:first-child {
-    border-top: 1px solid $border-catalog;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
   }
 
   &:last-child {
@@ -212,14 +205,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,27 +220,44 @@
 }
 
 .catalog__link {
+  position: relative;
   text-decoration: none;
 }
 
 .catalog__img {
-  width: 100%;
-  height: 138px;
+  height: 141px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -35px;
-    margin-bottom: -35px;
+    display: block;
+    height: auto;
+    max-width: 200%;
+    top: -87px;
+    left: -40px;
+    margin-right: -40px;
+    margin-bottom: -77px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -15px;
-    margin-bottom: -15px;
+    top: -117px;
+    margin-bottom: -107px;
   }
+
+ &--small {
+   @media (min-width: $tablet-width) {
+     top: -60px;
+     margin-bottom: -40px;
+   }
+
+   @media (min-width: $desktop-width) {
+     top: -90px;
+     margin-bottom: -70px;
+   }
+ }
 }
 
 .catalog__wrapper {
-  padding-top: 10px;
+  padding-top: 11px;
   width: 50%;
 
   @media (min-width: $tablet-width) {
@@ -275,12 +284,12 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 15px 55px 20px 55px;
+    padding: 15px 56px 20px 60px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    padding: 2px 13px 25px 13px;
+    padding: 25px 10px 23px 13px;
   }
 }
 
@@ -308,22 +317,24 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     border-bottom: 1px solid $border-grey;
-    padding-top: 0;
-    padding-bottom: 9px;
-    align-items: center;
-    align-content: center;
+    line-height: 24px;
 
     &:not(:first-child) {
       padding-top: 5px;
 
-      @media (min-width: $desktop-width) {
-        padding-top: 7px;
+      @media (min-width: $tablet-width) {
+        padding-top: 6px;
+      }
+
+      @media (min-width: $desktop-width)  {
+        padding: 0;
+        line-height: 30px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 7px;
+    padding-bottom: 0;
   }
 }
 
@@ -332,9 +343,8 @@
   vertical-align: baseline;
   font-size: 16px;
   text-transform: uppercase;
-  line-height: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   width: 100%;
   box-sizing: border-box;
 

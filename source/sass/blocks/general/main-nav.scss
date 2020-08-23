@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    padding: 0;
   }
 }
 
@@ -56,6 +57,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-left: 2px;
   }
 }
 
@@ -161,9 +167,9 @@
     font-size: 20px;
     line-height: auto;
     font-weight: 400;
-    padding-top: 65px;
+    padding-top: 55px;
     padding-bottom: 20px;
-    width: 37%;
+    width: 33.5%;
 
     &--white::before {
       content: "";
@@ -177,7 +183,7 @@
       left: 110px;
       top: 0;
       z-index: -1;
-      /*закладка*/
+
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
@@ -250,7 +256,7 @@
     }
 
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 
