@@ -33,12 +33,23 @@
     vertical-align: middle;
     text-align: center;
     font-size: 16px;
-    line-height: 20px;
     padding: 10px;
     min-width: 238px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 0;
+    width: 100%;
+    padding-bottom: 9px;
+
+    &:hover {
+      background-color: $border-catalog;
+      color: $text-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: $text-color;
+    }
   }
 }

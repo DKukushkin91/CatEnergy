@@ -9,9 +9,7 @@
   font-weight: 400;
   line-height: 18px;
   padding: 0;
-
   min-width: 320px;
-  max-width: $desktop-width;
   background-color: $basic-white;
   height: 100%;
   margin: 0 auto;
@@ -19,28 +17,51 @@
 }
 
 .page__container {
-  max-width: $mobile-width;
+  background-color: $basic-white;
   margin: 0 auto;
-  padding: 0 20px;
+  overflow: hidden;
 
   &--footer {
     background-color: $background-grey;
+    padding: 0 20px;
   }
 
   &--main-result {
     background-color: $background-results;
+    padding: 0 20px;
   }
+
+  &--main-contacts {
+    background-color: $background-grey;
+    padding: 0 20px;
+  }
+
 
   @media (min-width: $tablet-width) {
     max-width: 1219px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 30px;
+
+    &--main-result-white {
+      background-color: $background-results;
+      background-image: linear-gradient($basic-white 55.5%, $background-results 55.5%);
+    }
+
+    &--form {
+      padding: 0 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1220px;
     padding: 0 110px;
+
+    &--header {
+      overflow: visible;
+    }
+
+    &--main-result-white {
+      background-color: $background-grey;
+      background-image: linear-gradient($basic-white 29.5%, $background-grey 29.5%);
+    }
   }
 }

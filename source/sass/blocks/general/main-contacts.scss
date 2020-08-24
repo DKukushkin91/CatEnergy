@@ -1,5 +1,6 @@
 .main-contacts {
   padding: 0;
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -8,30 +9,20 @@
 
 .main-contacts__wrapper {
   display: flex;
-  padding-left: 20px;
-  padding-right: 9px;
   padding-bottom: 28px;
-  padding-top: 28px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   align-items: center;
-
-  &--grey {
-    background-color: $background-grey;
-    padding-top: 29px;
-    padding-bottom: 30px;
-
-    @media (min-width: $tablet-width) {
-      align-content: center;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left: 71px;
-    padding-top: 57px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 55px;
     padding-bottom: 63px;
-    padding-right: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,8 +33,24 @@
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 70px;
+    left: 340px;
     padding: 66px 89px 60px 76px;
+  }
+
+  &--grey {
+    background-color: $background-grey;
+    padding: 0;
+    padding-top: 29px;
+    padding-bottom: 30px;
+
+
+    @media (min-width: $tablet-width) {
+      align-content: center;
+      padding-bottom: 60px;
+      padding-top: 62px;
+      padding-left: 40px;
+      padding-right: 41px;
+    }
   }
 }
 
@@ -54,26 +61,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-content: center;
+    padding: 0;
   }
 }
 
 .main-contacts__title {
   margin: 0;
+  margin-right: 16px;
   padding: 0;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 20px;
   color: $contacts-text;
   text-align: left;
-  margin-right: 10px;
   width: 65%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     padding: 0;
     padding-right: 200px;
   }
@@ -81,7 +88,8 @@
   &--js {
     @media (min-width: $desktop-width) {
       padding: 0;
-      margin-right: 30px;
+      margin-right: 48px;
+      line-height: 25px;
     }
   }
 }
@@ -100,6 +108,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
 
   &--js:first-child {
@@ -116,5 +128,16 @@
     @media (min-width: $desktop-width) {
       padding: 0;
     }
+  }
+}
+
+.main-contacts__map {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

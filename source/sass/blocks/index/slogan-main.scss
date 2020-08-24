@@ -1,4 +1,5 @@
 .slogan-main {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -18,9 +19,13 @@
   width: 100%;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     vertical-align: top;
-    padding-left: 77px;
+    padding-left: 47px;
     padding-bottom: 10px;
     padding-top: 16px;
     background: none;
@@ -32,10 +37,10 @@
     background-image: none;
     color: $basic-black;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 720px;
-    padding-top: 111px;
-    padding-bottom: 0;
+    padding-left: 70px;
+    padding-right: 600px;
+    padding-top: 78px;
+    padding-bottom: 47px;
     margin: 0;
   }
 }
@@ -55,7 +60,7 @@
     text-align: left;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
     width: 414px;
@@ -90,6 +95,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -102,16 +112,14 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: inline-block;
     position: relative;
-    vertical-align: middle;
     width: 100%;
     text-align: left;
     box-sizing: border-box;
     padding: 0;
     padding-top: 10px;
-    padding-left: 113px;
-    padding-right: 412px;
+    padding-left: 83px;
+    padding-right: 442px;
     padding-bottom: 526px;
     margin-top: 0;
 
@@ -121,11 +129,16 @@
       background-image: url("../img/index-can-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      left: 29px;
+      left: 0;
       top: -19px;
-      width: 709px;
+      width: inherit;
       height: 609px;
       z-index: 2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: 708px auto;
+      }
     }
   }
 
@@ -159,10 +172,15 @@
     left: 0;
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center 0;
     width: 100%;
     height: 270px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+      background-size: 280px auto;
+    }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
@@ -174,9 +192,13 @@
       background-repeat: no-repeat;
       width: 552px;
       height: 449px;
-      left: 360px;
-      bottom: -120px;
-      z-index: 2;
+      left: 368px;
+      bottom: -81px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 100%;
+      }
     }
   }
 
@@ -187,6 +209,7 @@
     margin: 0;
     font-size: 20px;
     z-index: 3;
+    min-width: 244px;
   }
 
   @media (min-width: $desktop-width) {
