@@ -378,8 +378,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 70px;
-      left: -140px;
+      width: 100vw;
+      left: -100px;
+      transform: translate(-97%);
+      bottom: 40%;
     }
   }
 

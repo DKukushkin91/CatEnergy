@@ -89,9 +89,10 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 7.5vw;
+      width: 100vw;
       background-color: $basic-green;
-      left: -183px;
+      left: -100px;
+      transform: translate(-97%);
       bottom: 40%;
     }
 

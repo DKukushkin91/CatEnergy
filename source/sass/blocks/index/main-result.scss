@@ -13,6 +13,8 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
+    background-color: $background-results;
+    background-image: linear-gradient($basic-white 29.5%, $background-results 29.5%);
   }
 }
 
@@ -162,7 +164,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $background-grey;
+    background-color: $background-results;
     font-size: 14px;
     line-height: 14px;
   }

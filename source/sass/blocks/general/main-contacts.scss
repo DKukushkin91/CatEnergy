@@ -33,18 +33,18 @@
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 340px;
+    left: 140px;
     padding: 66px 89px 60px 76px;
   }
 
   &--grey {
-    @media (max-width: $mobile-width) {
+    @media(max-width: $mobile-width) {
     background-color: $background-grey;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 29px;
     padding-bottom: 30px;
     }
-
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       background-color: $background-grey;
@@ -137,10 +137,5 @@
 .main-contacts__map {
   @media (min-width: $tablet-width) {
     height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    margin: 0 auto;
   }
 }

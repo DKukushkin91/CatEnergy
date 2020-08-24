@@ -19,11 +19,13 @@
 .page__container {
   background-color: $basic-white;
   margin: 0 auto;
-  overflow: hidden;
 
   &--footer {
     background-color: $background-grey;
-    padding: 0 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &--main-result {
@@ -36,9 +38,7 @@
     padding: 0 20px;
   }
 
-
   @media (min-width: $tablet-width) {
-    max-width: 1219px;
     padding: 0 30px;
 
     &--main-result-white {
@@ -49,19 +49,51 @@
     &--form {
       padding: 0 30px;
     }
+
+    &--footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+     }
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    max-width: 1220px;
     padding: 0 110px;
 
     &--header {
       overflow: visible;
     }
 
+    &--footer {
+     width: 100%;
+    }
+
+    &--main-contacts {
+      max-width: 1220px;
+    }
+
     &--main-result-white {
-      background-color: $background-grey;
-      background-image: linear-gradient($basic-white 29.5%, $background-grey 29.5%);
+      background-color: $background-results;
+      background-image: linear-gradient($basic-white 29.5%, $background-results 29.5%);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 696px;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: cover;
+        right: 0;
+        top: 0;
+        z-index: 0;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
+      }
     }
   }
 }
