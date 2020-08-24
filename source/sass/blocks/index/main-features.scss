@@ -92,8 +92,8 @@
     margin-bottom: 10px;
 
     @media (min-resolution: 2dppx) {
-    background-image: url("../img/advantage-leaf@2x.png");
-    background-size: 50px 50px;
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px 50px;
     }
 
     @media (min-width: $tablet-width) {
@@ -101,8 +101,8 @@
       margin: 0;
       width: 80px;
       height: 80px;
+    }
   }
-}
 
   @media (min-width: $tablet-width) {
     &::after {

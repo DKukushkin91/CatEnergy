@@ -243,17 +243,17 @@
     margin-bottom: -107px;
   }
 
- &--small {
-   @media (min-width: $tablet-width) {
-     top: -60px;
-     margin-bottom: -40px;
-   }
+  &--small {
+    @media (min-width: $tablet-width) {
+      top: -60px;
+      margin-bottom: -40px;
+    }
 
-   @media (min-width: $desktop-width) {
-     top: -90px;
-     margin-bottom: -70px;
-   }
- }
+    @media (min-width: $desktop-width) {
+      top: -90px;
+      margin-bottom: -70px;
+    }
+  }
 }
 
 .catalog__wrapper {
@@ -326,7 +326,7 @@
         padding-top: 6px;
       }
 
-      @media (min-width: $desktop-width)  {
+      @media (min-width: $desktop-width) {
         padding: 0;
         line-height: 30px;
       }
