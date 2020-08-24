@@ -195,9 +195,9 @@
       left: 368px;
       bottom: -81px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-desktop@2x.png");
-      background-size: 100%;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 100%;
       }
     }
   }

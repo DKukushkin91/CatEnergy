@@ -38,12 +38,12 @@
   }
 
   &--grey {
-    @media(max-width: $mobile-width) {
-    background-color: $background-grey;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 29px;
-    padding-bottom: 30px;
+    @media (max-width: $mobile-width) {
+      background-color: $background-grey;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 29px;
+      padding-bottom: 30px;
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
