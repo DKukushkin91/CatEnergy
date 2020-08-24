@@ -35,7 +35,6 @@
 
   &--main-contacts {
     background-color: $background-grey;
-    padding: 0 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +59,10 @@
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     padding: 0 110px;
+
+    &--main-result {
+      overflow: hidden;
+    }
 
     &--header {
       overflow: visible;
