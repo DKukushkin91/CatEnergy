@@ -51,7 +51,9 @@
     &--footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15%;
       width: 100%;
+      align-items: center;
     }
   }
 
@@ -69,6 +71,7 @@
 
     &--footer {
       width: 100%;
+      column-gap: 25%;
     }
 
     &--main-contacts {

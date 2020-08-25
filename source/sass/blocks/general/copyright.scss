@@ -22,6 +22,10 @@
   color: $text-color;
   font-size: 16px;
 
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+
   &:hover {
     .copyright__icon{
     fill: $basic-green;

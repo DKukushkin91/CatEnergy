@@ -234,6 +234,12 @@
         width: 32px;
         height: 14px;
         right: -46px;
+
+        @media (min-width: $tablet-width) {
+          height: 11px;
+          right: -55px;
+          top: 9px;
+        }
       }
     }
   }
@@ -259,10 +265,14 @@
   right: -39px;
   top: 5px;
 
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 11px;
+    right: -47px;
+    top: 9px;
+  }
+
   &--long {
     display: none;
-    width: 32px;
-    height: 14px;
-    right: -46px;
   }
 }

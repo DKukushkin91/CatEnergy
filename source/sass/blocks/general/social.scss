@@ -13,7 +13,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-right: 30px;
+    padding-left: 12px;
     border: none;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 48px;
+    padding-left: 33px;
   }
 }
 
@@ -37,6 +45,25 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 27px;
+    justify-content: space-between;
+  }
+}
+
+.social__icon {
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 29px;
+      height: 17px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 13px;
+      height: 29px;
+    }
   }
 }
