@@ -10,7 +10,7 @@
 .main-contacts__wrapper {
   display: flex;
   padding-bottom: 28px;
-  padding-top: 25px;
+  padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
@@ -46,7 +46,7 @@
       padding-bottom: 30px;
     }
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: 1219px) {
       background-color: $background-grey;
       align-content: center;
       padding-bottom: 60px;

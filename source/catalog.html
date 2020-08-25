@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("../sass/pixel-glass/img/MobileCatalog.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("../sass/pixel-glass/img/TabletCatalog.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("../sass/pixel-glass/img/DesktopCatalog.jpg");
+    }
+  }
+</style>
+<link href="../sass/pixel-glass/styles.css" rel="stylesheet">
+<script src="../sass/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">
@@ -43,7 +69,7 @@
     <ul class="catalog__list">
       <li class="catalog__item">
         <div class="catalog__conteiner">
-          <a href="#" class="catalog__link">
+          <a name="pro" class="catalog__link">
             <picture>
               <source media="(min-width: 1220px)" srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png">
@@ -167,7 +193,7 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__conteiner">
-          <a href="#" class="catalog__link">
+          <a name="slim" class="catalog__link">
             <picture>
               <source media="(min-width: 1220px)" srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@1x.png">
