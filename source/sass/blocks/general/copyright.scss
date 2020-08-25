@@ -27,14 +27,15 @@
   }
 
   &:hover {
-    .copyright__icon{
-    fill: $basic-green;
+    .copyright__icon {
+      fill: $basic-green;
     }
   }
 
   &:active {
     opacity: 0.3;
-    .copyright__icon{
+
+    .copyright__icon {
       fill: $basic-green;
     }
   }
