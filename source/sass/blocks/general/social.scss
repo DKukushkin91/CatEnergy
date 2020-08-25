@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
-  padding-top: 19px;
+  padding-top: 21px;
   padding-bottom: 19px;
   padding-left: 52px;
   padding-right: 60px;
@@ -24,44 +25,15 @@
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
+  fill: $icon-color;
 
-  &--vk {
-    background-image: url("../img/icon-vk.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 22px;
-    height: 12px;
-
-    @media (min-width: $tablet-width) {
-      width: 30px;
-      height: 22px;
-    }
+  &:hover {
+    fill: $basic-green;
   }
 
-  &--inst {
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 16px;
-    height: 16px;
-
-    @media (min-width: $tablet-width) {
-      width: 23px;
-      height: 23px;
-    }
-  }
-
-  &--fb {
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 10px;
-    height: 18px;
-
-    @media (min-width: $tablet-width) {
-      width: 13px;
-      height: 27px;
-    }
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

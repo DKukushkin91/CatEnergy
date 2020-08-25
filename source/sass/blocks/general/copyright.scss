@@ -1,11 +1,10 @@
 .copyright {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
-  padding-top: 25px;
+  padding-top: 29px;
+  padding-bottom: 10px;
   border-top: 1px solid $footer-border;
 
   @media (min-width: $tablet-width) {
@@ -16,22 +15,36 @@
 }
 
 .copyright__link {
+  display: block;
+  position: relative;
   text-decoration: none;
   font-family: "Arial", sans-serif;
   color: $text-color;
   font-size: 16px;
+
+  &:hover {
+    .copyright__icon{
+    fill: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    .copyright__icon{
+      fill: $basic-green;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
   }
 }
 
-.copyright__logo {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-
-  path {
-    fill: $icon-color;
-  }
+.copyright__icon {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  right: -8px;
+  top: -10px;
+  fill: $icon-color;
 }
