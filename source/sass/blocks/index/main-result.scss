@@ -3,7 +3,7 @@
   margin: 0;
   font-weight: 400;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     background-color: $basic-white;
     padding: 0;
     padding-top: 2px;
@@ -13,6 +13,8 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
+    background-color: $background-results;
+    background-image: linear-gradient($basic-white 29.5%, $background-results 29.5%);
   }
 }
 
@@ -32,6 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     padding-top: 59px;
     padding-bottom: 10px;
     margin: 0;
@@ -78,7 +81,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    margin: 0;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +89,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 71px;
+    margin: 0;
   }
 }
 
@@ -105,7 +108,7 @@
       margin-right: 42px;
 
       @media (min-width: $desktop-width) {
-        margin: 0;
+        margin-right: 0;
       }
     }
   }
@@ -113,8 +116,12 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     vertical-align: middle;
-    width: 44%;
+    width: 37%;
     margin: 0;
+
+    &:not(:first-child) {
+      margin-right: 72px;
+    }
   }
 }
 
@@ -162,7 +169,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $background-grey;
+    background-color: $background-results;
     font-size: 14px;
     line-height: 14px;
   }
@@ -171,14 +178,14 @@
 .main-result__cost {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   flex-grow: 1;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     display: inline-block;
     vertical-align: middle;
     text-align: right;
@@ -199,8 +206,9 @@
     line-height: 20px;
     padding-top: 61px;
     padding-left: 0;
-    padding-right: 40px;
+    padding-right: 112px;
     padding-bottom: 45px;
+    margin: 0;
   }
 }
 

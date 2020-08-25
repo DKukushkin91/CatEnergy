@@ -34,8 +34,9 @@
   padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 20px;
+  position: relative;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     position: relative;
     padding-left: 53px;
     padding-top: 77px;
@@ -43,23 +44,10 @@
     padding-right: 279px;
     margin-bottom: 29px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 80px;
-      right: 90px;
-      width: 140px;
-      height: 192px;
-      background-image: url("../img/icon-cat-slim.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      z-index: 1;
-    }
-
     &::after {
       content: "";
       position: absolute;
-      right: 63px;
+      right: 61px;
       top: 92px;
       background-color: $basic-green;
       background-position: 0 0;
@@ -71,18 +59,6 @@
 
     &--pro {
       padding-right: 311px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        right: 27px;
-        top: 137px;
-        width: 268px;
-        height: 112px;
-        background-image: url("../img/icon-cat-pro.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-      }
     }
   }
 
@@ -106,30 +82,6 @@
   margin-bottom: 29px;
   padding-left: 71px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: -10px;
-    z-index: 1;
-    background-image: url("../img/icon-cat-slim.svg");
-    width: 50px;
-    height: 53px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 70px;
-      height: 97px;
-      top: -26px;
-      left: 15px;
-    }
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -142,7 +94,7 @@
     height: 50px;
     border-radius: 50%;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: 1219px) {
       display: none;
     }
 
@@ -154,7 +106,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     text-align: left;
     font-size: 36px;
     line-height: 36px;
@@ -172,19 +124,64 @@
     font-size: 36px;
     line-height: 36px;
   }
+}
 
-  &--icon::before {
-    background-image: url("../img/icon-cat-pro.svg");
-    width: 67px;
-    height: 28px;
-    top: 4px;
-    left: -8px;
+.catalog-preview__icon-cat {
+  &--slim {
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      left: 30px;
+      top: 22px;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: 1219px) {
+      position: absolute;
+      right: 12px;
+      top: 22%;
+      width: 240px;
+      height: 198px;
+      z-index: 1;
+    }
 
     @media (min-width: $desktop-width) {
-      width: 134px;
-      height: 56px;
-      top: 0;
-      left: -18px;
+      position: absolute;
+      z-index: 1;
+      width: 100px;
+      height: 140px;
+      top: 20px;
+      left: 68px;
+    }
+  }
+
+  &--pro {
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      left: -13px;
+      top: 35px;
+      z-index: 1;
+      width: 100px;
+      height: 50px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: 1219px) {
+      position: absolute;
+      right: 16px;
+      top: 36.5%;
+      width: 360px;
+      height: 198px;
+      z-index: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      z-index: 1;
+      width: 180px;
+      height: 100px;
+      top: 67px;
+      left: -8px;
     }
   }
 }
@@ -198,7 +195,7 @@
   padding-bottom: 21px;
   border-bottom: 1px solid $border-color;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
     text-align: left;
     font-size: 16px;
     line-height: 24px;
@@ -227,36 +224,29 @@
   text-decoration: none;
   color: $basic-black;
 
+  &:hover {
+    .catalog-preview__icon-arrow {
+      display: none;
+
+      &--long {
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 14px;
+        right: -46px;
+
+        @media (min-width: $tablet-width) {
+          height: 11px;
+          right: -55px;
+          top: 9px;
+        }
+      }
+    }
+  }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
-  }
-
-  &:active::after {
-    width: 32px;
-    right: -46px;
-    bottom: 6px;
-    opacity: 0.3;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: -40px;
-    bottom: 5px;
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 12px;
-
-    @media (min-width: $tablet-width) {
-      right: -48px;
-      bottom: 9px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -52px;
-    }
+    fill: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: $tablet-width) {
@@ -265,5 +255,24 @@
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
+  }
+}
+
+.catalog-preview__icon-arrow {
+  position: absolute;
+  width: 25px;
+  height: 14px;
+  right: -39px;
+  top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 11px;
+    right: -47px;
+    top: 9px;
+  }
+
+  &--long {
+    display: none;
   }
 }
