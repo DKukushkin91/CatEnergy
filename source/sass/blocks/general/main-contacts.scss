@@ -27,13 +27,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    display: flex;
-    align-items: center;
     z-index: 1;
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 110px;
+    right: 52.9vw;
     padding: 66px 89px 60px 76px;
   }
 
