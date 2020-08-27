@@ -255,11 +255,11 @@
   box-sizing: border-box;
   outline: none;
 
-  &:invalid {
+  &:not(:placeholder-shown):invalid {
     border: 1px solid $invalid-input;
   }
 
-  &:invalid + .main-form__icon {
+  &:not(:placeholder-shown):invalid + .main-form__icon {
     fill: $invalid-input;
   }
 

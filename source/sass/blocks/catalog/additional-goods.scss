@@ -110,7 +110,7 @@
 
 .additional-goods__list {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 27px;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -134,13 +134,13 @@
 
 .additional-goods__item {
   margin: 0;
-  margin-bottom: 14px;
-  padding-bottom: 19px;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $border-grey;
 
   &:first-child {
     border-top: 1px solid $border-grey;
-    padding-top: 15px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -190,7 +190,7 @@
 .additional-goods__name {
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -222,9 +222,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
-  margin-bottom: 5px;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -299,11 +298,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   padding-right: 10px;
   padding-left: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -326,7 +326,7 @@
 .additional-goods__text {
   position: relative;
   margin: 0;
-  padding: 186px 54px 43px 45px;
+  padding: 184px 54px 41px 45px;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -345,33 +345,14 @@
     text-align: left;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 56px;
-    height: 60px;
-    left: 39%;
-    top: 22%;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      width: 80px;
-      height: 82px;
-      top: -20px;
-      left: -350px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 80px;
-      height: 82px;
-      top: 55px;
-      left: 80px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     padding: 184px 40px 42px 40px;
   }
+}
+
+.additional-goods__icon {
+  position: absolute;
+  left: 113px;
+  top: 66px;
+  fill: $basic-white;
 }
