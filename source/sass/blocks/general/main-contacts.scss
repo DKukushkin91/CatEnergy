@@ -9,7 +9,7 @@
 
 .main-contacts__wrapper {
   display: flex;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
@@ -27,13 +27,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    display: flex;
-    align-items: center;
     z-index: 1;
     background-color: $basic-white;
     width: 570px;
     top: 95px;
-    left: 110px;
+    right: calc(50% + 40px);
     padding: 66px 89px 60px 76px;
   }
 
@@ -43,7 +41,7 @@
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 29px;
-      padding-bottom: 30px;
+      padding-bottom: 27px;
     }
 
     @media (min-width: $tablet-width) and (max-width: 1219px) {

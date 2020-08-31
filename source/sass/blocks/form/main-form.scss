@@ -212,10 +212,27 @@
   padding: 0;
   margin: 0;
   margin-bottom: 13px;
+  cursor: pointer;
+
+  &--tel,
+  &--email {
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-bottom: 19px;
+  }
+}
+
+.main-form__icon {
+  position: absolute;
+  z-index: 1;
+  right: 21px;
+  fill: $catalog-item__title;
+
+  &--phone {
+    right: 16px;
   }
 }
 
@@ -238,12 +255,24 @@
   box-sizing: border-box;
   outline: none;
 
+  &:not(:placeholder-shown):invalid {
+    border: 1px solid $invalid-input;
+  }
+
+  &:not(:placeholder-shown):invalid + .main-form__icon {
+    fill: $invalid-input;
+  }
+
   &:hover {
     border: 1px solid $border-grey;
   }
 
-  &:active {
-    border: 1px solid $text-color;
+  &:focus {
+    outline: 2px solid $text-color;
+  }
+
+  &:focus + .main-form__icon {
+    fill: $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -308,7 +337,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -11px;
+      top: -13px;
     }
   }
 
@@ -330,7 +359,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 1px;
+      top: -1px;
     }
   }
 }
@@ -462,8 +491,8 @@
     border: 1px solid $border-grey;
   }
 
-  &:active {
-    border: 1px solid $text-color;
+  &:focus {
+    outline: 2px solid $text-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -494,6 +523,11 @@
   padding-bottom: 10px;
   margin: 0;
   margin-bottom: 4px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -511,6 +545,9 @@
   position: relative;
   margin: 0;
   margin-right: 15px;
+  outline: none;
+  width: 0;
+  height: 0;
 
   &::before {
     content: "";
@@ -521,6 +558,7 @@
     height: 28px;
     margin-left: 15px;
     border: 1px solid $border-grey;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 40px;
@@ -530,20 +568,25 @@
     }
   }
 
+  &:hover::before {
+    border: 1px solid $hover-radio;
+  }
+
   &:checked::after {
     content: "";
     position: absolute;
-    top: 2px;
-    left: -24px;
-    width: 18px;
+    left: -20px;
+    top: -2px;
+    width: 9px;
     height: 14px;
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    border: solid $basic-green;
+    border-width: 0 2px 2px 0;
+    transform: rotate(43deg);
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
-      left: -30px;
-      top: 2px;
+      left: -28px;
+      top: -1px;
     }
   }
 }
@@ -565,21 +608,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 49px;
     padding: 0;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
-    flex-grow: 1;
-    width: 47%;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 1;
-    margin-right: 70px;
-    width: 60%;
+    min-width: 282px;
   }
 }
 
@@ -595,15 +630,13 @@
     margin: 0;
     text-align: left;
     font-size: 16px;
-    flex-grow: 1;
-    width: 60%;
     padding: 10px;
-    padding-bottom: 15px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    flex-grow: 1;
+    padding-left: 0;
   }
 }
 
@@ -617,15 +650,15 @@
     padding-bottom: 70px;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
     padding: 0;
-    margin-bottom: 82px;
+    margin-bottom: 78px;
   }
 }

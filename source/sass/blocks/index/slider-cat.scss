@@ -160,11 +160,21 @@
   line-height: 20px;
   background: none;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border: none;
+    padding-bottom: 1px;
+  }
 
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
-    border-bottom: 1px dotted $basic-black;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
     font-size: 20px;
     padding: 0;
     padding-bottom: 6px;
