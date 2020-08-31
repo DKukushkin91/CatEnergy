@@ -337,7 +337,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -11px;
+      top: -13px;
     }
   }
 
@@ -359,7 +359,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 1px;
+      top: -1px;
     }
   }
 }
@@ -616,12 +616,6 @@
     font-size: 20px;
     min-width: 282px;
   }
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 1;
-    margin-right: 70px;
-    width: 60%;
-  }
 }
 
 .main-form__footnote {
@@ -642,7 +636,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    flex-grow: 1;
+    padding-left: 0;
   }
 }
 
@@ -662,11 +656,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
     padding: 0;
-    margin-bottom: 82px;
+    margin-bottom: 78px;
   }
 }
