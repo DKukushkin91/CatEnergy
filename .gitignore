@@ -13,3 +13,4 @@ source/css/*.map
 Thumbs.db
 node-modules
 pixel-glass
+build/
