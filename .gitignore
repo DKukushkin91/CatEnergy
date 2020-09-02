@@ -8,8 +8,5 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
 Thumbs.db
-node-modules
-pixel-glass
+build/
