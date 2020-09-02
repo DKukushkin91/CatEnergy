@@ -130,8 +130,8 @@
   &--slim {
     @media (max-width: $mobile-width) {
       position: absolute;
-      left: 30px;
-      top: 22px;
+      left: 22px;
+      top: 21px;
       z-index: 1;
       width: 50px;
       height: 50px;
@@ -139,17 +139,17 @@
 
     @media (min-width: $tablet-width) and (max-width: 1219px) {
       position: absolute;
-      right: 12px;
-      top: 22%;
-      width: 240px;
-      height: 198px;
+      right: 46px;
+      top: 81px;
+      width: 232px;
+      height: 192px;
       z-index: 1;
     }
 
     @media (min-width: $desktop-width) {
       position: absolute;
       z-index: 1;
-      width: 100px;
+      width: 70px;
       height: 140px;
       top: 20px;
       left: 68px;
@@ -159,18 +159,18 @@
   &--pro {
     @media (max-width: $mobile-width) {
       position: absolute;
-      left: -13px;
-      top: 35px;
+      left: 12px;
+      top: 24px;
       z-index: 1;
-      width: 100px;
+      width: 68px;
       height: 50px;
     }
 
     @media (min-width: $tablet-width) and (max-width: 1219px) {
       position: absolute;
-      right: 16px;
-      top: 36.5%;
-      width: 360px;
+      right: 27px;
+      top: 93px;
+      width: 270px;
       height: 198px;
       z-index: 1;
     }
@@ -178,10 +178,10 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       z-index: 1;
-      width: 180px;
-      height: 100px;
-      top: 67px;
-      left: -8px;
+      width: 132px;
+      height: 105px;
+      top: 42px;
+      left: 34px;
     }
   }
 }
@@ -237,7 +237,12 @@
 
         @media (min-width: $tablet-width) {
           height: 11px;
-          right: -55px;
+          right: -52px;
+          top: 8px;
+        }
+
+        @media (min-width: $desktop-width) {
+          right: -56px;
           top: 9px;
         }
       }
@@ -270,6 +275,10 @@
     height: 11px;
     right: -47px;
     top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -51px;
   }
 
   &--long {
