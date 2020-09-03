@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -136,21 +138,21 @@
           <div class="main-result__wrap slider-cat">
             <div class="slider-cat__container slider-cat__container--before">
             <picture>
-              <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp">
-              <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="slider-cat__img slider-cat__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="Было">
             </picture>
           </div>
           <div class="slider-cat__container slider-cat__container--after">
             <picture>
-              <source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp">
-              <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="slider-cat__img slider-cat__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="Стало">
             </picture>
           </div>
@@ -213,7 +215,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
           <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
-        </a>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>

@@ -7,7 +7,7 @@
 
 .main-form__title {
   padding: 0;
-  padding-top: 17px;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
@@ -119,15 +119,8 @@
   }
 
   &--contacts,
-  &--comments,
-  &--options {
+  &--comments {
     border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     padding: 0 20px;
     margin: 0;
     margin-bottom: 11px;
@@ -199,9 +192,10 @@
     }
   }
 }
-
 .main-form__label {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   text-align: left;
@@ -228,11 +222,11 @@
 .main-form__icon {
   position: absolute;
   z-index: 1;
-  right: 21px;
+  right: 16px;
   fill: $catalog-item__title;
 
   &--phone {
-    right: 16px;
+    right: 14px;
   }
 }
 
@@ -254,6 +248,7 @@
   margin-left: 14px;
   box-sizing: border-box;
   outline: none;
+  width: 50%;
 
   &:not(:placeholder-shown):invalid {
     border: 1px solid $invalid-input;
@@ -316,6 +311,7 @@
 
 .main-form__radiobtn {
   position: relative;
+  appearance: none;
   margin: 0;
 
   &::before {
@@ -548,6 +544,7 @@
   outline: none;
   width: 0;
   height: 0;
+  appearance: none;
 
   &::before {
     content: "";

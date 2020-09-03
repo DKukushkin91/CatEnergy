@@ -35,12 +35,6 @@
     font-size: 16px;
     padding: 10px;
     min-width: 238px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 0;
-    width: 100%;
-    padding-bottom: 9px;
 
     &:hover {
       background-color: $border-catalog;
@@ -50,6 +44,13 @@
     &:active {
       opacity: 0.3;
       color: $text-color;
+      background-color: $border-catalog;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 0;
+    width: 100%;
+    padding-bottom: 9px;
   }
 }

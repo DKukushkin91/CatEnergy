@@ -163,12 +163,22 @@
   cursor: pointer;
 
   &:hover {
+    margin-bottom: -1px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:active {
     border: none;
-    padding-bottom: 1px;
+    @media (min-width: $tablet-width) {
+      padding-bottom: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 1px;
+    }
   }
 
   @media (min-width: $tablet-width) {
