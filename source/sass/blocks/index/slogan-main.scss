@@ -24,6 +24,27 @@
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
+  @media (max-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -131px;
+      left: 0;
+      background-image: url("../img/index-can-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 0;
+      width: 100%;
+      height: 270px;
+      margin: 0;
+      pointer-events: none;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-mobile@2x.png");
+        background-size: 280px auto;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1219px) {
     vertical-align: top;
     padding-left: 47px;
@@ -170,41 +191,22 @@
   width: 100%;
   box-sizing: border-box;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 44px;
-    left: 0;
-    background-image: url("../img/index-can-mobile@1x.png");
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-position: center 0;
-    width: 100%;
-    height: 270px;
-    margin: 0;
-    pointer-events: none;
+    width: 552px;
+    height: 499px;
+    left: 368px;
+    bottom: -130px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-mobile@2x.png");
-      background-size: 280px auto;
-    }
-
-    @media (min-width: $tablet-width) and (max-width: 1219px) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/index-can-desktop@1x.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      width: 552px;
-      height: 499px;
-      left: 368px;
-      bottom: -130px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-can-desktop@2x.png");
-        background-size: 100%;
-      }
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 100%;
     }
   }
 

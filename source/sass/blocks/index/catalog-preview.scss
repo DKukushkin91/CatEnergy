@@ -35,6 +35,8 @@
   padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: $tablet-width) and (max-width: 1219px) {
     position: relative;
@@ -191,7 +193,7 @@
   color: $text-color;
   text-align: left;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding-bottom: 21px;
   border-bottom: 1px solid $border-color;
 
@@ -223,6 +225,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 80%;
 
   &:hover {
     .catalog-preview__icon-arrow {
@@ -233,7 +239,8 @@
         display: block;
         width: 32px;
         height: 14px;
-        right: -46px;
+        left: calc(100% + 15px);
+        top: calc(50% - 9px);
 
         @media (min-width: $tablet-width) {
           height: 11px;
@@ -267,8 +274,8 @@
   position: absolute;
   width: 25px;
   height: 14px;
-  right: -39px;
-  top: 5px;
+  left: calc(100% + 16px);
+  top: calc(50% - 9px);
 
   @media (min-width: $tablet-width) {
     width: 23px;

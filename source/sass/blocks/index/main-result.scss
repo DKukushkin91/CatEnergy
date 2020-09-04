@@ -76,6 +76,8 @@
   margin: 0;
   padding: 0;
   flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -176,7 +178,10 @@
 }
 
 .main-result__cost {
+  max-width: 100%;
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
   text-align: center;
@@ -228,6 +233,9 @@
 }
 
 .main-result__desc {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 14px 0;
   margin: 0;
 
