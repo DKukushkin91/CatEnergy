@@ -264,6 +264,8 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
+    display: block;
+    width: 15%;
     text-align: left;
   }
 }
