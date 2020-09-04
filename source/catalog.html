@@ -8,6 +8,32 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("pixel-glass/img/MobileCatalog.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("pixel-glass/img/TabletCatalog.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("pixel-glass/img/DesktopCatalog.jpg");
+    }
+  }
+</style>
+<link href="pixel-glass/styles.css" rel="stylesheet">
+<script src="pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">

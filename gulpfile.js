@@ -14,13 +14,15 @@ const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
+const tildeImporter = require('node-sass-tilde-importer');
 
 // Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({importer: tildeImporter
+    }).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
