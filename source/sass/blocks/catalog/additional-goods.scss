@@ -277,20 +277,13 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 0;
-  padding-left: 109px;
-  padding-right: 110px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 11px;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
-    padding: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 100%;
   }
 }

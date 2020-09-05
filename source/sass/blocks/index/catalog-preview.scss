@@ -42,7 +42,7 @@
     position: relative;
     padding-left: 53px;
     padding-top: 77px;
-    padding-bottom: 59px;
+    padding-bottom: 60px;
     padding-right: 279px;
     margin-bottom: 29px;
 
@@ -244,13 +244,13 @@
 
         @media (min-width: $tablet-width) {
           height: 11px;
-          right: -52px;
-          top: 8px;
+          left: calc(100% + 19px);
+          top: calc(50% - 9px);
         }
 
         @media (min-width: $desktop-width) {
-          right: -56px;
-          top: 9px;
+          top: calc(50% - 7px);
+          width: 42px;
         }
       }
     }
@@ -280,12 +280,13 @@
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 11px;
-    right: -47px;
-    top: 9px;
+    left: calc(100% + 24px);
+    top: calc(50% - 9px);
   }
 
   @media (min-width: $desktop-width) {
-    right: -51px;
+    top: calc(50% - 7px);
+    left: calc(100% + 27px);
   }
 
   &--long {
