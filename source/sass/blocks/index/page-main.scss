@@ -1,3 +1,114 @@
 .page-main {
   background-color: $basic-white;
 }
+
+.page-main__container {
+  background-color: $basic-white;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+
+    &--catalog {
+      border-bottom: 1px solid $border-color;
+      margin-bottom: 41px;
+    }
+
+    &--footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15%;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0 110px;
+    border: none;
+
+    &--footer {
+      width: 100%;
+      column-gap: 25%;
+    }
+  }
+}
+
+.page-main__background {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 83px;
+    padding-right: 442px;
+    padding-bottom: 526px;
+    margin-top: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 0;
+      top: -19px;
+      width: inherit;
+      height: 609px;
+      z-index: 2;
+      pointer-events: none;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: 708px auto;
+        pointer-events: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 267px;
+    padding-left: 80px;
+  }
+}
+
+.page-main__link {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-bottom: 22px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin: 0;
+    font-size: 20px;
+    z-index: 3;
+    min-width: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}

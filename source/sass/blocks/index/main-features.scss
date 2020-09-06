@@ -4,11 +4,10 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) and (max-width: 1219px) {
-    padding-bottom: 68px;
+    padding-bottom: 26px;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 43px;
-    border-bottom: 1px solid $border-tablet;
   }
 
   @media (min-width: $desktop-width) {
