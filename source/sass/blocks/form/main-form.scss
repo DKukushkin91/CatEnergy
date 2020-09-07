@@ -433,7 +433,7 @@
     @media (min-width: $desktop-width) {
       width: 100vw;
       left: -100px;
-      transform: translate(-97%);
+      transform: translate(-96%);
       bottom: 40%;
     }
   }
@@ -630,6 +630,7 @@
   border: none;
   width: 100%;
   box-sizing: border-box;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     margin: 0;

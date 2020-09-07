@@ -34,17 +34,17 @@
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     padding: 0 110px;
-    overflow: hidden;
+    margin: 0 auto;
 
     &--white {
       background-color: $basic-white;
-      background-image: linear-gradient($basic-white 29.5%, $background-results 29.5%);
+      background-image: linear-gradient($basic-white 26.2%, $background-results 26.2%);
     }
   }
 }
 
 .main-result__grid-container {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -67,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 59px;
+    padding-top: 29px;
     padding-bottom: 10px;
     margin: 0;
     margin-bottom: 30px;

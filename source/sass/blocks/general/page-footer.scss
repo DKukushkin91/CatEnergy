@@ -27,10 +27,10 @@
 }
 
 .page-footer__container {
-    background-color: $background-grey;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  background-color: $background-grey;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
