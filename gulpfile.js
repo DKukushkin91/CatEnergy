@@ -61,7 +61,6 @@ const webP = () => {
 
 exports.webP = webP;
 
-
 // Image
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
