@@ -57,12 +57,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 24px;
+    height: 51px;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-left: 2px;
+    padding-top: 54px;
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -129,15 +132,10 @@
   .main-nav--closed .main-nav__item {
     display: none;
   }
-}
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs {
-  position: static;
-  min-height: 0;
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav__list {

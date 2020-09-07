@@ -5,9 +5,23 @@
   overflow: hidden;
 }
 
+.main-form__box {
+  background-color: $basic-white;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .main-form__title {
   padding: 0;
-  padding-top: 17px;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
@@ -93,13 +107,15 @@
     border: none;
 
     &--options .main-form__caption {
-      margin-bottom: 57px;
+      margin-bottom: 49px;
+      padding-top: 17px;
+      padding-bottom: 10px;
     }
   }
 
   &--border {
     padding-top: 5px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) and (max-width: 1219px) {
@@ -122,23 +138,17 @@
   &--comments,
   &--options {
     border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     padding: 0 20px;
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;
-      margin-bottom: 47px;
+      margin-bottom: 49px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 68px;
+      margin-bottom: 52px;
       padding: 0;
     }
   }
@@ -181,7 +191,7 @@
 
   &--options {
     @media (min-width: $tablet-width) and (max-width: 1219px) {
-      padding: 7px 10px 10px 12px;
+      padding: 7px 10px 10px 13px;
       margin: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -202,6 +212,8 @@
 
 .main-form__label {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   text-align: left;
@@ -213,6 +225,7 @@
   margin: 0;
   margin-bottom: 13px;
   cursor: pointer;
+  box-sizing: border-box;
 
   &--tel,
   &--email {
@@ -228,11 +241,19 @@
 .main-form__icon {
   position: absolute;
   z-index: 1;
-  right: 21px;
+  right: 16px;
   fill: $catalog-item__title;
 
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+
   &--phone {
-    right: 16px;
+    right: 14px;
+
+    @media (min-width: $desktop-width) {
+      right: 16px;
+    }
   }
 }
 
@@ -240,20 +261,21 @@
   flex-grow: 1;
   text-align: left;
   font-size: 16px;
+  line-height: 24px;
   font-family: "Oswald", sans-serif;
-  line-height: 18px;
   text-transform: uppercase;
   color: $text-color;
   border: 1px solid $input-border;
   padding: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
   margin-left: 14px;
   box-sizing: border-box;
   outline: none;
+  width: 50%;
 
   &:not(:placeholder-shown):invalid {
     border: 1px solid $invalid-input;
@@ -280,6 +302,7 @@
     margin-left: 18px;
     padding-bottom: 10px;
     padding-top: 11px;
+    line-height: 30px;
   }
 }
 
@@ -293,7 +316,7 @@
   color: $catalog-item__title;
   padding-left: 45px;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 16px;
   margin: 0;
 
@@ -316,6 +339,7 @@
 
 .main-form__radiobtn {
   position: relative;
+  appearance: none;
   margin: 0;
 
   &::before {
@@ -371,7 +395,7 @@
   margin: 0;
   padding: 0;
   padding-right: 22vw;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 11px;
   margin-bottom: 20px;
   text-align: left;
@@ -386,12 +410,12 @@
     bottom: 40%;
 
     @media (min-width: $tablet-width) {
-      left: 94%;
+      left: calc(100% - 4.7vw);
       bottom: 35%;
     }
 
     @media (min-width: $desktop-width) {
-      right: calc(50% - 50vw);
+      left: calc(100% - 1vw);
     }
   }
 
@@ -409,7 +433,7 @@
     @media (min-width: $desktop-width) {
       width: 100vw;
       left: -100px;
-      transform: translate(-97%);
+      transform: translate(-96%);
       bottom: 40%;
     }
   }
@@ -445,11 +469,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 1;
     margin: 0;
-    margin-right: 78px;
-    padding-right: 0;
-    width: 26%;
+    padding: 0;
+    margin-bottom: 15px;
+    width: 47%;
   }
 }
 
@@ -458,14 +481,15 @@
 
   @media (min-width: $tablet-width) {
     & .main-form__input {
-      margin-left: 12px;
-      padding-left: 22px;
+      margin-left: 18px;
+      padding-left: 18px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 1;
     margin: 0;
+    width: 47%;
+    margin-bottom: 15px;
   }
 }
 
@@ -545,9 +569,9 @@
   position: relative;
   margin: 0;
   margin-right: 15px;
-  outline: none;
   width: 0;
   height: 0;
+  appearance: none;
 
   &::before {
     content: "";
@@ -596,21 +620,23 @@
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  line-height: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
   margin-bottom: 21px;
   border: none;
   width: 100%;
   box-sizing: border-box;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
@@ -647,7 +673,7 @@
     padding: 0;
     padding-right: 0;
     padding-left: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 72px;
     width: 100%;
     box-sizing: border-box;
     display: grid;
@@ -659,6 +685,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     padding: 0;
-    margin-bottom: 78px;
+    margin-bottom: 82px;
   }
 }

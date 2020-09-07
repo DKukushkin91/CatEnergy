@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page__body">
-  <div class="page__container page__container--header">
+  <div class="page__container page__container--header-white">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <a class="main-nav__logo">
           <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
@@ -38,17 +40,17 @@
   </div>
 
   <main class="page-main">
-    <div class="page__container">
+    <div class="page-main__container">
       <h1 class="visually-hidden">Cat energy. Всё о питании для котов</h1>
       <section class="slogan-main">
         <h2 class="slogan-main__title">Функциональное питание для котов</h2>
         <p class="slogan-main__text">занялся собой? займись котом!</p>
       </section>
-      <span class="slogan-main__background">
-        <a href="form.html" class="slogan-main__link button">подобрать программу</a>
+      <span class="page-main__background">
+        <a href="form.html" class="page-main__link button">подобрать программу</a>
       </span>
     </div>
-    <div class="page__container">
+    <div class="page-main__container page-main__container--catalog">
       <section class="catalog-preview">
         <h2 class="visually-hidden">Индивидуальные программы</h2>
         <ul class="catalog-preview__list">
@@ -110,9 +112,9 @@
     </div>
 
       <section class="main-result">
-        <div class="page__container page__container--main-result page__container--main-result-white">
+        <div class="main-result__container main-result__container--white">
         <h2 class="main-result__title">Живой пример</h2>
-        <div class="main-result__container">
+        <div class="main-result__grid-container">
         <div class="main-result__wrapper">
         <p class="main-result__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -136,21 +138,21 @@
           <div class="main-result__wrap slider-cat">
             <div class="slider-cat__container slider-cat__container--before">
             <picture>
-              <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp">
-              <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="slider-cat__img slider-cat__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="Было">
             </picture>
           </div>
           <div class="slider-cat__container slider-cat__container--after">
             <picture>
-              <source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp">
-              <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png">
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="slider-cat__img slider-cat__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="Стало">
             </picture>
           </div>
@@ -162,7 +164,7 @@
               <button type="button" class="slider-cat__button">стало</button>
             </div>
           </div>
-          </div>
+        </div>
         </div>
       </section>
 
@@ -175,11 +177,21 @@
           </div>
         </div>
         <div class="main-contacts__map" id="map" style="width: 100%; min-height: 362px"></div>
+          <div class="main-contacts__background">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@1x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@1x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@1x.webp 2x">
+            <source media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@1x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@1x.png 2x">
+            <img class="main-contacts__mapps" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png" alt="Карта">
+          </picture>
+        </div>
       </div>
   </main>
 
     <footer class="page-footer">
-      <div class="page__container page__container--footer">
+      <div class="page-footer__container">
       <a href="index.html" class="page-footer__logo">
         <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
       </a>
@@ -213,15 +225,13 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
           <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
-        </a>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </div>
     </footer>
 
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<e8c381f1-4417-41b3-95c7-24140e2a89ba>&lang=ru_RU"
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e8c381f1-4417-41b3-95c7-24140e2a89ba&lang=ru_RU"
     type="text/javascript">
   </script>
   <script src="js/maps.js" type="text/javascript"></script>

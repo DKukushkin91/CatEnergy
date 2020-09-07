@@ -264,6 +264,8 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
+    display: block;
+    width: 15%;
     text-align: left;
   }
 }
@@ -275,26 +277,20 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 0;
-  padding-left: 109px;
-  padding-right: 110px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 11px;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
-    padding: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 100%;
   }
 }
 
 .additional-goods__inner {
   display: inline-block;
+  background-color: $basic-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;

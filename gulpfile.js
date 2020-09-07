@@ -11,13 +11,17 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const tildeImporter = require("node-sass-tilde-importer");
 
 // Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({importer: tildeImporter
+    }).on("error", sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -30,7 +34,25 @@ const styles = () => {
 
 exports.styles = styles;
 
-//webP
+// Html
+const htmlmini = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"))
+}
+
+exports.htmlmini = htmlmini;
+
+// JS
+const jsmin = () => {
+  return gulp.src("source/js/**/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("build/js"))
+  }
+
+exports.jsmin = jsmin;
+
+// WebP
 const webP = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
@@ -66,7 +88,7 @@ exports.sprite = sprite;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "source"
     },
     cors: true,
     notify: false,
@@ -92,9 +114,7 @@ const copy = () => {
   return gulp.src ([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.ico",
-    "source/*.html"
+    "source/*.ico"
   ] , {
     base: "source"
   })
@@ -111,5 +131,5 @@ const clean = () => {
 exports.clean = clean;
 
 // Build
-const build = gulp.series(clean, copy, styles, sprite);
+const build = gulp.series(clean, copy, styles, htmlmini, jsmin, sprite);
 exports.build = build;

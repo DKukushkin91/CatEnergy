@@ -5,6 +5,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
+  background-color: $basic-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -23,6 +24,27 @@
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
+  @media (max-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -131px;
+      left: 0;
+      background-image: url("../img/index-can-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 0;
+      width: 100%;
+      height: 270px;
+      margin: 0;
+      pointer-events: none;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-mobile@2x.png");
+        background-size: 280px auto;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1219px) {
     vertical-align: top;
     padding-left: 47px;
@@ -31,10 +53,12 @@
     background: none;
     margin: 0;
     margin-bottom: 10px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     background-image: none;
+    background-color: $basic-white;
     color: $basic-black;
     text-align: left;
     padding-left: 70px;
@@ -42,6 +66,24 @@
     padding-top: 78px;
     padding-bottom: 47px;
     margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 552px;
+      height: 499px;
+      left: calc(50% - 162px);
+      bottom: calc(50% - 345px);
+      z-index: 2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 100%;
+      }
+    }
   }
 }
 
@@ -100,122 +142,5 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
-  }
-}
-
-.slogan-main__background {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) and (max-width: 1219px) {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 0;
-    padding-top: 10px;
-    padding-left: 83px;
-    padding-right: 442px;
-    padding-bottom: 526px;
-    margin-top: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/index-can-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      left: 0;
-      top: -19px;
-      width: inherit;
-      height: 609px;
-      z-index: 2;
-      pointer-events: none;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-can-tablet@2x.jpg");
-        background-size: 708px auto;
-        pointer-events: none;
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 267px;
-    padding-left: 80px;
-  }
-}
-
-.slogan-main__link {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 18px;
-  padding-top: 11px;
-  padding-bottom: 12px;
-  padding-left: 72px;
-  padding-right: 72px;
-  margin-bottom: 22px;
-  width: 100%;
-  box-sizing: border-box;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 44px;
-    left: 0;
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
-    width: 100%;
-    height: 270px;
-    margin: 0;
-    pointer-events: none;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-mobile@2x.png");
-      background-size: 280px auto;
-    }
-
-    @media (min-width: $tablet-width) and (max-width: 1219px) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/index-can-desktop@1x.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      width: 552px;
-      height: 499px;
-      left: 368px;
-      bottom: -130px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-can-desktop@2x.png");
-        background-size: 100%;
-      }
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin: 0;
-    font-size: 20px;
-    z-index: 3;
-    min-width: 244px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
   }
 }

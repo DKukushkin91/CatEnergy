@@ -1,3 +1,9 @@
+var mapJs = document.querySelector('.main-contacts__mapps');
+var mapBg = document.querySelector('.main-contacts__background')
+
+mapJs.style.display = "none";
+mapBg.style.display = "none";
+
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [59.938635, 30.323118],
