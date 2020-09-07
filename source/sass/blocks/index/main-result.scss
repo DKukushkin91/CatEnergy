@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   font-weight: 400;
+  background-color: $background-results;
+  z-index: 10;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) and (max-width: 1219px) {
     background-color: $basic-white;
@@ -11,10 +14,25 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     padding: 0;
     margin: 0;
-    background-color: $background-results;
-    background-image: linear-gradient($basic-white 26.2%, $background-results 26.2%);
+    background-color: $background-grey;
+    background-image: linear-gradient(to right,  $background-grey calc(100% - 32vw), $background-results calc(100% - 32vw)),
+    linear-gradient(to bottom, $basic-white 20%, $background-results 40%);
+  }
+}
+
+.main-result__box {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+    padding: 0;
   }
 }
 
@@ -24,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    background-color: $basic-white;
 
     &--white {
       background-color: $background-results;
@@ -35,10 +54,11 @@
     max-width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+    background-color: $basic-white;
 
     &--white {
       background-color: $basic-white;
-      background-image: linear-gradient($basic-white 26.2%, $background-results 26.2%);
+      background-image: linear-gradient(to right,  $background-grey 72.5%, $background-results 28.5%);
     }
   }
 }
@@ -67,10 +87,13 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 29px;
-    padding-bottom: 10px;
-    margin: 0;
-    margin-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 75px;
+    padding-right: 110px;
+    padding-left: 110px;
+    margin: 0 auto;
+    max-width: 1220px;
+
   }
 }
 
@@ -203,7 +226,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $background-results;
+    background-color: $background-grey;
     font-size: 14px;
     line-height: 14px;
   }
@@ -251,7 +274,7 @@
 
 .main-result__wrapper {
   @media (min-width: $desktop-width) {
-    padding-top: 106px;
+    padding-top: 71px;
     padding-right: 171px;
     padding-bottom: 10px;
   }

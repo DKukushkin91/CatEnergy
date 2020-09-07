@@ -276,6 +276,7 @@
   box-sizing: border-box;
   outline: none;
   width: 50%;
+  color: $text-color;
 
   &:not(:placeholder-shown):invalid {
     border: 1px solid $invalid-input;
@@ -305,6 +306,12 @@
     line-height: 30px;
   }
 }
+
+.main-form__input::placeholder,
+.main-form__textarea::placeholder {
+  color: $text-color;
+}
+
 
 .main-form__text {
   display: flex;
@@ -341,6 +348,11 @@
   position: relative;
   appearance: none;
   margin: 0;
+  cursor: pointer;
+
+  &:hover::before {
+    border: 1px solid $hover-radio;
+  }
 
   &::before {
     content: "";
@@ -351,7 +363,6 @@
     height: 28px;
     border: 1px solid $border-grey;
     border-radius: 50%;
-
 
     @media (min-width: $tablet-width) {
       left: -60px;
