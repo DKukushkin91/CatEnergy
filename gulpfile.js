@@ -12,9 +12,8 @@ const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require('gulp-uglify');
-const pipeline = require('readable-stream').pipeline;
-const tildeImporter = require('node-sass-tilde-importer');
+const uglify = require("gulp-uglify");
+const tildeImporter = require("node-sass-tilde-importer");
 
 // Styles
 const styles = () => {
@@ -22,7 +21,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass({importer: tildeImporter
-    }).on('error', sass.logError))
+    }).on("error", sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -89,7 +88,7 @@ exports.sprite = sprite;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "source"
     },
     cors: true,
     notify: false,
