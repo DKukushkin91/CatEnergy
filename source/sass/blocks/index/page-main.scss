@@ -102,6 +102,10 @@
   box-sizing: border-box;
   z-index: 1;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 18px;

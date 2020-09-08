@@ -163,6 +163,10 @@
   border: none;
   cursor: pointer;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   &:hover {
     margin-bottom: -1px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);

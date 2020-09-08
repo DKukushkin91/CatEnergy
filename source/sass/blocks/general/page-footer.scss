@@ -53,6 +53,10 @@
   text-align: center;
   margin-bottom: 30px;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   &:hover {
     opacity: 0.8;
   }

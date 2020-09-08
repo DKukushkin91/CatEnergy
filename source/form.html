@@ -8,6 +8,32 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("pixel-glass/img/MobileForm.jpg");
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("pixel-glass/img/TabletForm.jpg");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1220px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("pixel-glass/img/DesktopForm.jpg");
+    }
+  }
+</style>
+<link href="pixel-glass/styles.css" rel="stylesheet">
+<script src="pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="page__body">
@@ -56,17 +82,20 @@
               <input class="main-form__input" type="text" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="main-form__fieldset main-form__fieldset--border">
-            <label class="main-form__text">похудение
-              <input class="main-form__radiobtn visually-hidden" name="radio" type="radio" checked>
-            </label>
-            <label class="main-form__text">набор массы
-              <input class="main-form__radiobtn visually-hidden" name="radio" type="radio">
-            </label>
-            <label class="main-form__text">не знаю (нужен ваш совет)
-              <input class="main-form__radiobtn visually-hidden" name="radio" type="radio">
-            </label>
-          </fieldset>
+          <ul class="main-form__list">
+            <li class="main-form__item main-form__item--radio">
+              <input id="slimming" class="visually-hidden main-form__radiobtn" name="radio" type="radio" checked>
+              <label for="slimming" class="main-form__label main-form__label--radio">похудение</label>
+            </li>
+            <li class="main-form__item main-form__item--radio">
+              <input id="weight" class="visually-hidden main-form__radiobtn" name="radio" type="radio">
+              <label for="weight" class="main-form__label main-form__label--radio">набор массы</label>
+            </li>
+            <li class="main-form__item main-form__item--radio">
+              <input id="answer" class="visually-hidden main-form__radiobtn" name="radio" type="radio">
+              <label for="answer" class="main-form__label main-form__label--radio">не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
         </div>
         <fieldset class="main-form__fieldset main-form__fieldset--contacts">
           <legend class="main-form__caption">Контактные данные (владельца кота)</legend>
@@ -91,20 +120,24 @@
         </fieldset>
         <fieldset class="main-form__fieldset main-form__fieldset--options">
           <legend class="main-form__caption">Дополнительно</legend>
-          <div class="main-form__container main-form__container--options">
-            <label class="main-form__options">сахарозаменитель
-              <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox" checked>
-            </label>
-            <label class="main-form__options">питьевая вода
-              <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox">
-            </label>
-            <label class="main-form__options">молоко
-              <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox">
-            </label>
-            <label class="main-form__options">витамины
-              <input class="main-form__checkbox visually-hidden" name="checkbox" type="checkbox">
-            </label>
-          </div>
+          <ul class="main-form__list main-form__list--checkbox">
+            <li class="main-form__item main-form__item--checkbox">
+            <input id="sugar" class="visually-hidden main-form__checkbox" name="checkbox" type="checkbox" checked>
+            <label for="sugar" class="main-form__label main-form__label--checkbox">сахарозаменитель</label>
+            </li>
+            <li class="main-form__item main-form__item--checkbox">
+            <input id="water" class="visually-hidden main-form__checkbox" name="checkbox" type="checkbox">
+            <label for="water" class="main-form__label main-form__label--checkbox">питьевая вода</label>
+          </li>
+          <li class="main-form__item main-form__item--checkbox">
+            <input id="milk" class="visually-hidden main-form__checkbox" name="checkbox" type="checkbox">
+            <label for="milk" class="main-form__label main-form__label--checkbox">молоко </label>
+          </li>
+          <li class="main-form__item main-form__item--checkbox">
+            <input id="vitamins" class="visually-hidden main-form__checkbox" name="checkbox" type="checkbox">
+            <label for="vitamins" class="main-form__label main-form__label--checkbox">витамины</label>
+          </li>
+          </ul>
         </fieldset>
         <div class="main-form__inner">
           <button class="main-form__button button" type="submit">Отправить заявку</button>

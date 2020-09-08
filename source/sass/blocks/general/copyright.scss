@@ -37,6 +37,10 @@
     }
   }
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   &:active {
     opacity: 0.3;
 

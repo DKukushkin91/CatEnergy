@@ -35,6 +35,10 @@
   text-decoration: none;
   fill: $icon-color;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   &:hover {
     fill: $basic-green;
   }

@@ -172,6 +172,21 @@
   }
 }
 
+.main-nav__list .main-nav__link {
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+}
+
+.main-nav__list--white .main-nav__link {
+  @media (min-width: $desktop-width) {
+    &:focus {
+      outline: 1px solid $basic-white;
+    }
+  }
+}
+
+
 .main-nav__item {
   padding-top: 22px;
   padding-bottom: 24px;
@@ -211,7 +226,7 @@
     padding-right: 0;
 
     &:not(:last-child) {
-      margin-right: 34px;
+      margin-right: 35px;
     }
 
     &--active {

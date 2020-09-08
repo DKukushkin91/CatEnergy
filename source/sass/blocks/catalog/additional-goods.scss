@@ -281,6 +281,10 @@
   width: 100%;
   box-sizing: border-box;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;

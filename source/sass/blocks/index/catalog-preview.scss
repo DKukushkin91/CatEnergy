@@ -231,6 +231,10 @@
   vertical-align: middle;
   max-width: 80%;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   &:hover {
     .catalog-preview__icon-arrow {
       display: none;

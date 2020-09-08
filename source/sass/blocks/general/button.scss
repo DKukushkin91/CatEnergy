@@ -28,6 +28,10 @@
   width: 100%;
   box-sizing: border-box;
 
+  &:focus {
+    outline: 1px solid $basic-black;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
