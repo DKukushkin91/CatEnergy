@@ -253,7 +253,12 @@
 .catalog__link {
   position: relative;
   text-decoration: none;
+  display: block;
 
+  &--img {
+    display: block;
+  }
+/*Закладка*/
   &:focus {
     outline: 1px solid $basic-black;
   }
