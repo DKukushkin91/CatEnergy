@@ -337,7 +337,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-input::-moz-placeholder, input::-moz-placeholder {
+input::-moz-placeholder {
   opacity: 1; }
 
 .button {
