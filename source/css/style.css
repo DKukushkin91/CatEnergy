@@ -337,6 +337,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+input::-moz-placeholder, input::-moz-placeholder {
+  opacity: 1; }
+
 .button {
   color: #ffffff;
   background-color: #68b738;
@@ -3055,14 +3058,15 @@ img {
   margin-left: 14px;
   box-sizing: border-box;
   outline: none;
-  width: 50%;
-  color: #444444; }
-  .main-form__input:invalid {
+  width: 50%; }
+  .main-form__input:invalid:not(:focus):not(:hover) {
     border: 1px solid #ff8282; }
   .main-form__input:invalid + .main-form__icon {
     fill: #ff8282; }
   .main-form__input:hover {
     border: 1px solid #cdcdcd; }
+  .main-form__input:hover + .main-form__icon {
+    fill: #222222; }
   .main-form__input:focus {
     outline: 2px solid #444444; }
   .main-form__input:focus + .main-form__icon {

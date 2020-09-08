@@ -277,7 +277,7 @@
   outline: none;
   width: 50%;
 
-  &:invalid {
+  &:invalid:not(:focus):not(:hover) {
     border: 1px solid $invalid-input;
   }
 
@@ -287,6 +287,10 @@
 
   &:hover {
     border: 1px solid $border-grey;
+  }
+
+  &:hover + .main-form__icon {
+    fill: $catalog-title;
   }
 
   &:focus {
