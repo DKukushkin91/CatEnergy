@@ -18,8 +18,8 @@
     padding: 0;
     margin: 0;
     background-color: $background-grey;
-    background-image: linear-gradient(to right,  $background-grey calc(100% - 32vw), $background-results calc(100% - 32vw)),
-    linear-gradient(to bottom, $basic-white 20%, $background-results 40%);
+    background-image: linear-gradient(to right, $background-grey calc(100% - 32vw), $background-results calc(100% - 32vw)),
+      linear-gradient(to bottom, $basic-white 20%, $background-results 40%);
   }
 }
 
@@ -58,7 +58,7 @@
 
     &--white {
       background-color: $basic-white;
-      background-image: linear-gradient(to right,  $background-grey 72.5%, $background-results 28.5%);
+      background-image: linear-gradient(to right, $background-grey 72.5%, $background-results 28.5%);
     }
   }
 }
@@ -93,7 +93,6 @@
     padding-left: 110px;
     margin: 0 auto;
     max-width: 1220px;
-
   }
 }
 

@@ -78,7 +78,7 @@
   display: grid;
   grid-template-rows: 2fr auto;
   border-bottom: 1px solid $border-catalog;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
@@ -255,58 +255,57 @@
   text-decoration: none;
   display: block;
 
-  &--img {
-    display: block;
-  }
-/*Закладка*/
   &:focus {
     outline: 1px solid $basic-black;
   }
 }
 
-.catalog__img {
+.catalog__link--img-small {
   position: relative;
-  width: 140px;
-  top: -22px;
-  margin-bottom: -22px;
-  left: calc(50% - 70px);
-
-  &:focus {
-    outline: 1px solid $basic-black;
-  }
+  display: block;
+  text-align: center;
+  top: -19px;
+  margin-bottom: -19px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    max-width: none;
+    top: -48px;
+    left: calc(50% - 163px);
     width: 330px;
-    margin: 0;
-    top: calc(50% - 74px);
-    left: calc(50% - 170px);
   }
 
   @media (min-width: $desktop-width) {
-    width: 251px;
-    top: calc(50% - 118px);
-    left: calc(50% - 126px);
+    top: -89px;
+    left: calc(50% - 123px);
+    width: 243px;
+  }
+}
+
+.catalog__link--img {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: -17px;
+  margin-bottom: -17px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -72px;
+    left: calc(50% - 163px);
+    width: 320px;
   }
 
-  &--small {
-    display: block;
-    top: -19px;
-    margin-bottom: -19px;
-    min-width: 140px;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      top: calc(50% - 45px);
-      left: calc(50% - 167px);
-    }
-
-    @media (min-width: $desktop-width) {
-      top: calc(50% - 91px);
-      left: calc(50% - 126px);
-    }
+  @media (min-width: $desktop-width) {
+    top: -117px;
+    left: calc(50% - 123px);
+    width: 243px;
   }
+}
+
+.catalog__img {
+  display: block;
 }
 
 .catalog__wrapper {
@@ -331,8 +330,9 @@
   color: $catalog-item__title;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-right: 40px;
+  padding-top: 5px;
 
   &:focus {
     outline: 1px solid $basic-black;
@@ -415,7 +415,7 @@
   box-sizing: border-box;
   z-index: 1;
 
-  &:focus{
+  &:focus {
     outline: 1px solid $basic-black;
   }
 
