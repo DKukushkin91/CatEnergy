@@ -302,10 +302,10 @@
   }
 }
 
-.main-form__input--error:not(:focus) {
-    border: 1px solid $invalid-input;
+.main-form__input--error:focus:invalid {
+  border: 1px solid $invalid-input;
 
-  & + .main-form__icon {
+  &:focus:invalid + .main-form__icon {
     fill: $invalid-input;
   }
 }

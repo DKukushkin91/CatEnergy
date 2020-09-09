@@ -3075,9 +3075,9 @@ input::-moz-placeholder {
       padding-top: 11px;
       line-height: 30px; } }
 
-.main-form__input--error:not(:focus) {
+.main-form__input--error:focus:invalid {
   border: 1px solid #ff8282; }
-  .main-form__input--error:not(:focus) + .main-form__icon {
+  .main-form__input--error:focus:invalid:focus:invalid + .main-form__icon {
     fill: #ff8282; }
 
 .main-form__input::-moz-placeholder, .main-form__textarea::-moz-placeholder {
