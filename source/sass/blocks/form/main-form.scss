@@ -277,14 +277,6 @@
   outline: none;
   width: 50%;
 
-  &:invalid:not(:focus):not(:hover) {
-    border: 1px solid $invalid-input;
-  }
-
-  &:invalid + .main-form__icon {
-    fill: $invalid-input;
-  }
-
   &:hover {
     border: 1px solid $border-grey;
   }
@@ -307,6 +299,14 @@
     padding-bottom: 10px;
     padding-top: 11px;
     line-height: 30px;
+  }
+}
+
+.main-form__input--error:not(:focus) {
+    border: 1px solid $invalid-input;
+
+  & + .main-form__icon {
+    fill: $invalid-input;
   }
 }
 

@@ -3059,10 +3059,6 @@ input::-moz-placeholder {
   box-sizing: border-box;
   outline: none;
   width: 50%; }
-  .main-form__input:invalid:not(:focus):not(:hover) {
-    border: 1px solid #ff8282; }
-  .main-form__input:invalid + .main-form__icon {
-    fill: #ff8282; }
   .main-form__input:hover {
     border: 1px solid #cdcdcd; }
   .main-form__input:hover + .main-form__icon {
@@ -3078,6 +3074,11 @@ input::-moz-placeholder {
       padding-bottom: 10px;
       padding-top: 11px;
       line-height: 30px; } }
+
+.main-form__input--error:not(:focus) {
+  border: 1px solid #ff8282; }
+  .main-form__input--error:not(:focus) + .main-form__icon {
+    fill: #ff8282; }
 
 .main-form__input::-moz-placeholder, .main-form__textarea::-moz-placeholder {
   color: #444444; }
