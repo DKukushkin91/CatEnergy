@@ -6,7 +6,6 @@
   <li>node</li>
   <li>flex / grid</li>
   <li>кроссбраузерная верстка (кроме IE11)</li>
-  <li>JS для меню</li>
   <li>API Яндекс карт</li>
   <li>Sass</li>
   <li>БЭМ</li>
