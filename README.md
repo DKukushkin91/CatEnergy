@@ -11,4 +11,4 @@
   <li>БЭМ</li>
 </ul>
 <p>Запуск проекта командой npm start</p>
-Проект на <a href="https://dkukushkin91.github.io/CatEnergy.github.io/">github-pages</a>
+Проект на <a href="https://cat-energy-shop.vercel.app/">vercel</a>
