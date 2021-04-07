@@ -353,16 +353,19 @@
 
 .additional-goods__icon {
   position: absolute;
-  left: 113px;
-  top: 66px;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   fill: $basic-white;
 
   @media (min-width: $tablet-width) {
-    left: 90px;
-    top: 64px;
+    left: 10%;
+    top: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 95px;
+    top: 30%;
+    left: 50%;
   }
 }

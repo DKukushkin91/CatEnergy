@@ -1,4 +1,4 @@
-var mapJs = document.querySelector(".main-contacts__mapps");
+var mapJs = document.querySelector(".main-contacts__map-plug");
 var mapBg = document.querySelector(".main-contacts__background")
 
 mapJs.style.display = "none";
